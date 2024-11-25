@@ -38,3 +38,14 @@ The trinket editor offers a mixture of old Python version 2 commands and new Pyt
 
 ## Remixing someone else's project
 
+Trinket projects are all public, and anyone can open and look at them. If you want to edit someone else's project you can *Remix* it to your account. All you need is the full internet address (URL) of the project. Here is a URL link to a trinket project. If you click on this link it will open the project in your browser:
+
+[https://trinket.io/python/b5b7db3d4e6f](https://trinket.io/python/b5b7db3d4e6f)
+
+![Remixing a trinket](trinket4.png)
+
+You will notice a green button labelled *Remix* in the top left. Click on this, and it will change to say *remixed*. Although the project is now remixed into your account you can't save your changes in this window. Instead, open *My Trinkets* (see above for how to do this) then look for the project in your trinkets. It will probably be at the top left of the list. Click on this and it will open the full editor window:
+
+![Editing remixed trinket](trinket5.png)
+
+You can now ***rename*** the project by clicking on the project name. You also have a *Save* button. Make sure you save your projects often so you don't lose any of your code.
