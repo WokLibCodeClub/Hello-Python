@@ -38,7 +38,7 @@ Many Python functions let you put more than one thing inside the brackets, and i
 print('Taylor', 'Swift')
 ```
 
-You will see it prints one text string after the other (and 
+You will see it prints one text string after the other (and also puts a space between the items).
 
 We can also use ```print()``` to print numbers. 
 
@@ -47,3 +47,18 @@ print(5)
 ```
 
 Numbers are a different type of Python object - you can do some things with numbers that you can't do with text strings, and vice versa.
+
+### Python arithmetic
+
+
+
+
+## The Interactive Python Console
+
+Open a new tab in your browser and go to this link:
+
+[trinket.io/console](https://trinket.io/console)
+
+This opens the Interactive Python Console, where the left end of each line begins with three *greater than* signs: ```>>>```.
+
+You can use the console to try out Python code, and it has the advantage that you don't need to keep printing things.
