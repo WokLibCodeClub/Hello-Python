@@ -20,3 +20,11 @@ This page shows all the projects that are in your account. To open one, just cli
 
 ## Starting a new trinket project
 
+To start a new trinket project click on the little downward-pointing arrow next to your username and select *New Project*. A drop-down list opens up and you want to select the ***TOP*** item *Python*, but instead of left-clicking you should **right-click** and select *Open in a new tab* which will put your new project in a new tab, so you can quickly go back and look at the list of all your trinkets.
+
+In the new tab you will find your new project:
+
+![New Trinket page](trinket3.png)
+
+First, give your project a name by typing the name where you see the word *Untitled*, then click on the *Save* button. You are now ready to begin adding Python code into your project.
+
