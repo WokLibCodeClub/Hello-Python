@@ -49,3 +49,5 @@ You will notice a green button labelled *Remix* in the top left. Click on this, 
 ![Editing remixed trinket](trinket5.png)
 
 You can now ***rename*** the project by clicking on the project name. You also have a *Save* button. Make sure you save your projects often so that you don't lose any of your code.
+
+[Back to front page](../README.md)
