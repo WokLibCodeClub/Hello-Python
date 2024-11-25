@@ -28,3 +28,13 @@ In the new tab you will find your new project:
 
 First, give your project a name by typing the name where you see the word *Untitled*, then click on the *Save* button. You are now ready to begin adding Python code into your project.
 
+### Python gobbledegook...
+
+The trinket editor offers a mixture of old Python version 2 commands and new Python 3 commands. To avoid confusion we need to tell trinket to *always* use Python 3 commands, so all your trinket Python projects should have this code as the first line:
+
+``` python
+#!/bin/python3
+```
+
+## Remixing someone else's project
+
