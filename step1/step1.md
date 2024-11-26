@@ -227,10 +227,10 @@ puts the number object ```5``` in a storage box, and puts the label ```a``` on t
 The code
 
 ``` python
-myname = "Ebenezer"
+myname = "Hagrid"
 ```
 
-puts the text string object ```"Ebenezer"``` in a storage box, and puts the label ```myname``` on the box.
+puts the text string object ```"Hagrid"``` in a storage box, and puts the label ```myname``` on the box.
 
 ### Variable names
 
