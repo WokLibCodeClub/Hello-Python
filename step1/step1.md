@@ -246,3 +246,6 @@ Be careful!! Python is very fussy about capital letters and small letters. If yo
 
 Let's experiment with another Python function.
 
+That's enough for the first step in Python coding. Take a break or go on to [step 2](../step2/step2.md).
+
+[Back to front page](../README.md)
