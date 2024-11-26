@@ -50,8 +50,31 @@ Numbers are a different type of Python object - you can do some things with numb
 
 ### Python arithmetic
 
+Python can do arithmetic with numbers using the signs
 
+- \+ for addition
+- \- for subtraction
+- \* for multiplication and
+- \/ for division.
 
+You can work out a sum inside the brackets in a ```print()``` function.
+
+Try these lines of code:
+
+```python
+print(4 + 2)
+print(4 - 2)
+print(4 * 2)
+print(4 / 2)
+```
+
+Click on **Run** to try out your code.
+
+You might notice that the last sum  - the division sum - prints the answer slightly differently to the others as it prints a decimal point and a zero after the answer.
+
+Python has *two* types of number objects - whole numbers, called *integers*, which don't have any decimal values, and decimal numbers, called *floating point numbers* which have decimals. When Python does a division sum it *always* gives the answer as a decimal number, not a whole number.
+
+You can do some things with integers that you can't do with decimal numbers, and vice versa.
 
 ## The Interactive Python Console
 
@@ -61,4 +84,52 @@ Open a new tab in your browser and go to this link:
 
 This opens the Interactive Python Console, where the left end of each line begins with three *greater than* signs: ```>>>```.
 
-You can use the console to try out Python code, and it has the advantage that you don't need to keep printing things.
+You can use the console to try out Python code. It's really handy, because you can get it to show the result of your code without having to keep using the ```print()``` function.
+
+In the console type:
+
+```
+2 + 4
+```
+
+and press Return. The console gives you the answer straight away.
+
+You can combine different arithmetic operations.
+
+In the console type
+
+```
+2 + 3 * 4
+```
+
+and try to predict the answer before you press Return.
+
+Did you get it right? 
+
+<details><summary>Click here if you didn't</summary>
+
+<p></p>
+If you thought the answer would be 20 you may have forgotten the rule BODMAS which tells you that you have to do multiplication <i>before</i> the addition.
+<p></p>
+How could you add a left and a right bracket to the sum so that the answer <i>would</i> be 20?
+<p></p>
+  
+</details>
+
+### Arithmetic with text strings
+
+You can also do arithmetic with text strings. You can use + to add text strings together:
+
+```
+'Good' + 'morning'
+```
+
+but did you notice Python *didn't* put a space between the words this time?
+
+You can multiply a text string by a number to repeat it. Here we make the computer laugh:
+
+```
+'Ha' * 10
+```
+
+
