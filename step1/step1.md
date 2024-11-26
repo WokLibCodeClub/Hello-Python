@@ -4,9 +4,7 @@ Use trinket to open a new project - this will be your first Python code, so give
 
 The trinket window has two parts - to the left is the *coding panel* where you write your code; to the right is the *results panel* where the output of your code appears.
 
-In Python code a lot of the words you type are followed by brackets: ```()``` and sometimes there are things typed inside the brackets, and sometimes they are empty.
-
-When a word in Python is followed by brackets it means it is a Python ***function*** which means it carries out some action for us. At first we will use functions written by someone else, but later we will write our own functions.
+In Python code a lot of the words you type are followed by brackets: ```()``` and sometimes there are things typed inside the brackets, and sometimes they are empty. When a word in Python is followed by brackets it means it is a Python ***function*** which means it carries out some action for us. At first we will use functions written by someone else, but later we will write our own functions.
 
 ## print()
 
@@ -30,7 +28,7 @@ Click on the triangle labelled **Run** and see what happens.
 
 Now change the single quote marks ```'``` to double quote marks ```"``` and see what happens.
 
-Python calls letters and/or numbers inside quote marks a *text string*. A text string is a type of Python *object*. Python lets you use single quotes or double quotes to make a text string.
+Python names letters and/or numbers inside quote marks a *text string*. A text string is a type of Python *object*. Python lets you use single quotes or double quotes to make a text string.
 
 Many Python functions let you put more than one thing inside the brackets, and in this case you have to separate the different items with a comma ```,```. Try
 
@@ -72,7 +70,7 @@ Click on **Run** to try out your code.
 
 You might notice that the last sum  - the division sum - prints the answer slightly differently to the others as it prints a decimal point and a zero after the answer.
 
-Python has *two* types of number objects - whole numbers, called *integers*, which don't have any decimal values, and decimal numbers, called *floating point numbers* which have decimals. When Python does a division sum it *always* gives the answer as a decimal number, not a whole number.
+Python has different types of number objects and the two main types are whole numbers, called *integers*, which don't have any decimal values, and decimal numbers, called *floating point numbers* which have decimals. When Python does a division sum it *always* gives the answer as a decimal number, not a whole number.
 
 You can do some things with integers that you can't do with decimal numbers, and vice versa.
 
@@ -104,12 +102,12 @@ In the console type
 
 and try to predict the answer before you press Return.
 
-Did you get it right? 
+Did you get it right?
 
 <details><summary>Click here if you didn't</summary>
 
 <p></p>
-If you thought the answer would be 20 you may have forgotten the rule BODMAS which tells you that you have to do multiplication <i>before</i> the addition.
+If you thought the answer would be 20 you may have forgotten the rule BODMAS which tells you that you have to do multiplication <i>before</i> addition.
 <p></p>
 How could you add a left and a right bracket to the sum so that the answer <i>would</i> be 20?
 <p></p>
@@ -134,17 +132,29 @@ You can multiply a text string by a number to repeat it. Here we make the comput
 
 ## Python comments
 
-Go back to your trinket project with your first ever Python code. 
+Go back to your trinket project with your first ever Python code.
+
+Every time you run the code it will carry out all the instructions from the top. As you add extra code to the end of your project you may want Python to ignore some of the earlier lines of code to avoid cluttering up the output.
+
+To make Python ignore a line of code place the ```#``` character in the left hand column - this turns that line of code into a *comment*, which is skipped over by Python.
+
+In fact *comments* are extremely useful because you can use them to make notes in the middle of your code about what each bit of code is doing. As you write more complicated code comments can save you a lot of time in locating a bit of your code which might need editing.
+
+For example, you could put this comment line above the lines of code where you used the addition, subtraction, multiplication and division operators:
+
+```python
+# Demonstration of Python arithmetic
+```
 
 ## Python libraries
 
-When you start a new Python project you have lots of basic Python functions available to use and these will allow you to do a lot of coding. This is like a pizza base with the basic ingredients.
+When you start a new Python project you have lots of basic Python functions available to use and these will allow you to do a lot of coding. This is like a pizza base with just the basic ingredients.
 
 Sometimes you want to do other tasks which are not included in the basic Python functions, and for this there are a huge number of Python ***libraries*** containing extra functions which you can use. These are like the extra toppings on your pizza.
 
 To use functions from a library you have to ***import*** the library, and ```import``` instructions should go at the top of your project immediately after the ```#!/bin/python3``` line.
 
-One library we often use is the ```random``` library, which contains a lot of functions which use random numbers, so this is often used in games. 
+One library we often use is the ```random``` library, which contains a lot of functions which use random numbers, so this is often used in games.
 
 To import **all** the functions in the ```random``` library you would use the code:
 
@@ -152,7 +162,7 @@ To import **all** the functions in the ```random``` library you would use the co
 from random import *
 ```
 
-Sometimes you only want to import one function from a library. If you only wanted to import the ```randint``` function from the ```random``` library (which generates random integers) you would use
+Sometimes you only want to import *one* function from a library. If you only wanted to import the ```randint``` function from the ```random``` library (which generates random integers) you would use
 
 ``` python
 from random import randint
@@ -166,9 +176,13 @@ To import the ```sleep``` function from the ```time``` library you would use
 from time import sleep
 ```
 
+Once you've imported the ```sleep``` function you can use it in your code. For example, this code would make the Python code *wait* for 5 seconds:
 
+``` python
+sleep(5)
+```
 
-
+But if you *haven't* imported the sleep function then your code would give an error.
 
 ## Python variables
 
