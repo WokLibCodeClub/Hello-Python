@@ -30,7 +30,7 @@ Click on the triangle labelled **Run** and see what happens.
 
 Now change the single quote marks ```'``` to double quote marks ```"``` and see what happens.
 
-Python calls letters and/or numbers inside quote marks a *text string*. A text string is a type of Python *object*. Python lets you use single quotes or double quotes to make a text string. 
+Python calls letters and/or numbers inside quote marks a *text string*. A text string is a type of Python *object*. Python lets you use single quotes or double quotes to make a text string.
 
 Many Python functions let you put more than one thing inside the brackets, and in this case you have to separate the different items with a comma ```,```. Try
 
@@ -40,7 +40,7 @@ print('Taylor', 'Swift')
 
 You will see it prints one text string after the other (and also puts a space between the items).
 
-We can also use ```print()``` to print numbers. 
+We can also use ```print()``` to print numbers.
 
 ``` python
 print(5)
@@ -88,7 +88,7 @@ You can use the console to try out Python code. It's really handy, because you c
 
 In the console type:
 
-```
+``` python
 2 + 4
 ```
 
@@ -98,7 +98,7 @@ You can combine different arithmetic operations.
 
 In the console type
 
-```
+``` python
 2 + 3 * 4
 ```
 
@@ -120,7 +120,7 @@ How could you add a left and a right bracket to the sum so that the answer <i>wo
 
 You can also do arithmetic with text strings. You can use + to add text strings together:
 
-```
+``` python
 'Good' + 'morning'
 ```
 
@@ -128,8 +128,49 @@ but did you notice Python *didn't* put a space between the words this time?
 
 You can multiply a text string by a number to repeat it. Here we make the computer laugh:
 
-```
+``` python
 'Ha' * 10
 ```
 
+## Python comments
+
+Go back to your trinket project with your first ever Python code. 
+
+## Python libraries
+
+When you start a new Python project you have lots of basic Python functions available to use and these will allow you to do a lot of coding. This is like a pizza base with the basic ingredients.
+
+Sometimes you want to do other tasks which are not included in the basic Python functions, and for this there are a huge number of Python ***libraries*** containing extra functions which you can use. These are like the extra toppings on your pizza.
+
+To use functions from a library you have to ***import*** the library, and ```import``` instructions should go at the top of your project immediately after the ```#!/bin/python3``` line.
+
+One library we often use is the ```random``` library, which contains a lot of functions which use random numbers, so this is often used in games. 
+
+To import **all** the functions in the ```random``` library you would use the code:
+
+``` python
+from random import *
+```
+
+Sometimes you only want to import one function from a library. If you only wanted to import the ```randint``` function from the ```random``` library (which generates random integers) you would use
+
+``` python
+from random import randint
+```
+
+Another useful library is the ```time``` library, which has functions involving dates, times and a function called ```sleep``` to make the code wait for a length of time.
+
+To import the ```sleep``` function from the ```time``` library you would use
+
+``` python
+from time import sleep
+```
+
+
+
+
+
+## Python variables
+
+## input()
 
