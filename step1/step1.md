@@ -130,6 +130,32 @@ You can multiply a text string by a number to repeat it. Here we make the comput
 'Ha' * 10
 ```
 
+Here is a little Python exercise to do with addition, and it involves numbers and text strings. Type this into the interactive console but before you press Return try to predict what output it will give:
+
+``` python
+20 + 24
+```
+
+Now try this
+
+``` python
+"20" + "24"
+```
+
+Now this
+
+``` python
+"20 + 24"
+```
+
+Now this
+
+``` python
+"20" + 24
+```
+
+The last one gives an error because we are accidentally mixing different types of objects in the addition sum - ```"20"``` is a text string and ```24``` is a number. You can add objects of the *same* type but you can't mix types in addition.
+
 ## Python comments
 
 Go back to your trinket project with your first ever Python code.
@@ -188,7 +214,7 @@ But if you *haven't* imported the sleep function then your code would give an er
 
 In Scratch you can create a lot of projects without ever using variables, but in Python you will find you need to use variables in virtually every project.
 
-A variable is like a *label* stuck on a storage box in the computer's internal memory - which consists of millions of storage boxes. Inside the box you can place any of the different types of Python objects - numbers, text strings, turtles (yes, really!) or
+A variable is like a *label* stuck on a storage box in the computer's internal memory - which consists of millions of storage boxes. Inside the box you can place any of the different types of Python objects - numbers, text strings, turtles (yes, really!) etc.
 
 Python uses the sign ```=``` to make a variable. To the left of the ```=``` sign you put the *name* of the variable, and to the right you put the object that you want the variable to point to. The Python code
 
@@ -213,6 +239,8 @@ You can use any letter of the alphabet, capital or small, in your variable names
 There are some words you should avoid for variable names, as these are Python *key words* used in other Python commands - these are
 
 ```and, as, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while, with, yield```
+
+Be careful!! Python is very fussy about capital letters and small letters. If you made a variable called ```letter``` and another one called ```Letter``` Python would treat these as *completely separate* variables.
 
 ## input()
 
