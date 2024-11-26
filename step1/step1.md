@@ -186,5 +186,35 @@ But if you *haven't* imported the sleep function then your code would give an er
 
 ## Python variables
 
+In Scratch you can create a lot of projects without ever using variables, but in Python you will find you need to use variables in virtually every project.
+
+A variable is like a *label* stuck on a storage box in the computer's internal memory - which consists of millions of storage boxes. Inside the box you can place any of the different types of Python objects - numbers, text strings, turtles (yes, really!) or
+
+Python uses the sign ```=``` to make a variable. To the left of the ```=``` sign you put the *name* of the variable, and to the right you put the object that you want the variable to point to. The Python code
+
+``` python
+a = 5
+```
+
+puts the number object ```5``` in a storage box, and puts the label ```a``` on the box.
+
+The code
+
+``` python
+myname = "Ebenezer"
+```
+
+puts the text string object ```"Ebenezer"``` in a storage box, and puts the label ```myname``` on the box.
+
+### Variable names
+
+You can use any letter of the alphabet, capital or small, in your variable names, and the numbers 0 to 9 and the underscore ```_``` character, BUT the first character of the variable name *can't* be a number.
+
+There are some words you should avoid for variable names, as these are Python *key words* used in other Python commands - these are
+
+```and, as, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while, with, yield```
+
 ## input()
+
+Let's experiment with another Python function.
 
