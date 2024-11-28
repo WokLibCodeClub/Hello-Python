@@ -156,6 +156,8 @@ Now this
 
 The last one gives an error because we are accidentally mixing different types of objects in the addition sum - ```"20"``` is a text string and ```24``` is a number. You can add objects of the *same* type but you can't mix types in addition.
 
+In the next step we will come across special functions which can change Python objects from one type to another.
+
 ## Python comments
 
 Go back to your trinket project with your first ever Python code.
@@ -194,6 +196,14 @@ Sometimes you only want to import *one* function from a library. If you only wan
 from random import randint
 ```
 
+The ```randint()``` function generates random integers - put two numbers inside the brackets to show the smallest and largest numbers you want to generate.
+
+``` python
+randint(1,10)
+```
+
+will generate a random integer between 1 and 10.
+
 Another useful library is the ```time``` library, which has functions involving dates, times and a function called ```sleep``` to make the code wait for a length of time.
 
 To import the ```sleep``` function from the ```time``` library you would use
@@ -209,6 +219,24 @@ sleep(5)
 ```
 
 But if you *haven't* imported the sleep function then your code would give an error.
+
+We can practise using imported functions in your code. Make sure you have imported the two functions randint and sleep:
+
+``` python
+from random import randint
+from time import sleep
+```
+
+then type in this code:
+
+``` python
+sleep(randint(2,7))
+print('BOO!')
+```
+
+Here we've used ```randint(2,7)``` to generate a random integer between 2 and 7, and then we've used this random number in the ```sleep()``` function so we will wait for a random number of seconds.
+
+It's very common in Python to put one function *inside* another.
 
 ## Python variables
 
