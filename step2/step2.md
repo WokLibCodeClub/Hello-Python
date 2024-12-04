@@ -16,7 +16,7 @@ and click on Run. In the results panel you will see it has printed **What's your
 
 The phrase inside the brackets in the ```input()``` function is called a *prompt string*.
 
-(Did you notice I used *double* quotes for my prompt phrase above? That's because my phrase includes an apostrophe in the word **What's**. If you tried to use single quotes Python would thing this apostrophe was a single quote mark which would indicate the end of the string.)
+(Did you notice I used *double* quotes for my prompt string above? That's because my string includes an apostrophe in the word **What's**. If you tried to use single quotes Python would think this apostrophe was a single quote mark which would indicate the end of the string.)
 
 When you're ready, go on to [the next step](../step3/step3.md) and start learning Python graphics!
 
