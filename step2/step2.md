@@ -77,7 +77,7 @@ If you didn't call your variable ```born``` then use your variable name instead.
 
 Click Run and see what happens. Oh no - there's an error. You can seen that the last line you typed is highlighted in red, and at the bottom of the editing panel is a message:
 
-<p style="background-color:rgb(255,204,204);">TypeError: unsupported operand type(s) for Sub: 'int' and 'str' on line 8 in main.py</p>
+![Type Error](type_error.png)
 
 ## Types of Python objects
 
