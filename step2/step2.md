@@ -67,7 +67,7 @@ this_year =
 
 where you have to add the correct year after the *equals* sign.
 
-Calculating someone's age is a simple subtraction sum. Add this line of code:
+Calculating someone's age is a simple subtraction sum. Add this line of code to subtract one variable from another:
 
 ``` python
 age = this_year - born
@@ -77,7 +77,7 @@ If you didn't call your variable ```born``` then use your variable name instead.
 
 Click Run and see what happens. Oh no - there's an error. You can seen that the last line you typed is highlighted in red, and at the bottom of the editing panel is a message:
 
-<p style="color:black;font-family:&quot;Times New Roman&quot; ;background-color:rgb(255,204,204);">TypeError: unsupported operand type(s) for Sub: 'int' and 'str' on line 8 in main.py</p>
+<span style="color:black;font-family:&quot;Times New Roman&quot; ;background-color:rgb(255,204,204);">TypeError: unsupported operand type(s) for Sub: 'int' and 'str' on line 8 in main.py</span>
 
 ## Types of Python objects
 
