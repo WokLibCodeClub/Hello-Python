@@ -52,20 +52,36 @@ If we want to calculate someone's age, we first need to know what year they were
 This is an example of code which will work:
 
 ``` python
-year = input('What year were you born? ')
+born = input('What year were you born? ')
 ```
 
 <p></p>
 
 </details>
 
-The next thing we need is the year right now. We could put this in a variable called ```this_year```:
+The next thing we need is what year it is today. We could put this in a variable called ```this_year```:
 
 ``` python
 this_year = 
 ```
 
 where you have to add the correct year after the *equals* sign.
+
+Calculating someone's age is a simple subtraction sum. Add this line of code:
+
+``` python
+age = this_year - born
+```
+
+If you didn't call your variable ```born``` then use your variable name instead.
+
+Click Run and see what happens. Oh no - there's an error. You can seen that the last line you typed is highlighted in red, and at the bottom of the editing panel is a message:
+
+<p style="color:black;font-family:&quot;Times New Roman&quot; ;background-color:rgb(255,204,204);">TypeError: unsupported operand type(s) for Sub: 'int' and 'str' on line 8 in main.py</p>
+
+## Types of Python objects
+
+We've run into a problem concerned with the way the ```input()``` function works.
 
 When you're ready, go on to [the next step](../step3/step3.md) and start learning Python graphics!
 
