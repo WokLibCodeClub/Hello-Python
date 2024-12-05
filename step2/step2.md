@@ -78,7 +78,7 @@ If you didn't call your variable ```born``` then use your variable name instead.
 This line is supposed to calculate the person's age, but our code won't tell us the answer unless we *print* it. So add another line
 
 ``` python
-print(age)
+print('You are', age)
 ```
 
 Click Run and see what happens. Oh no - there's an error. You can seen that the last line you typed is highlighted in red, and at the bottom of the editing panel is a message:
@@ -127,7 +127,21 @@ In case you wondered, there's another function ```str()``` which converts a numb
 
 The last thing printed is the computer's calculation of the person's age. But *sometimes it gives the wrong answer!* This happens if the person hasn't yet had a birthday this year, which means the computer calculates an age which is one too large.
 
-To make sure the computer always calculates the correct answer we need to check if the person has had a birthday this year or not.
+To make sure the computer always calculates the correct answer we need to check if the person has had a birthday this year or not. Then we will be able to do a different calculation, depending on the answer.
+
+Add more code *before* calculating the persons age. This will be another ```input()``` function, with another variable, to say if the person has had a birthday this year. Here is one way to do it:
+
+``` python
+birthday = input('Have you had a birthday yet this year (y or n)?')
+```
+
+It's always a good idea in a question like this to tell the user what sort of answer you are expecting - so the prompt string here ends with "(y or n)" to tell the user to input "y" or "n", instead of the words "yes" or "no".
+
+## The Python ```if``` block
+
+You've probably come across coding ```if``` and ```else``` in Scratch. Here is what the Scratch block looks like:
+
+
 
 When you're ready, go on to [the next step](../step3/step3.md) and start learning Python graphics!
 
