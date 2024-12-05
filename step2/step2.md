@@ -44,7 +44,7 @@ Don't forget to add the first line of code in your new project:
 #!/bin/python3
 ```
 
-If we want to calculate someone's age, we first need to know what year they were born. Write code, using the ```input()``` function and a variable to ask the user to type in their age.
+If we want to calculate someone's age, we first need to know what year they were born. Write code, using the ```input()``` function and a variable to ask the user to type in the year they were born.
 
 <details><summary>Hint</summary>
 
