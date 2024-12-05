@@ -89,7 +89,7 @@ Click Run and see what happens. Oh no - there's an error. You can seen that the 
 
 We've run into a problem concerned with the way the ```input()``` function works.
 
-In step 1 we mentioned that numbers and text strings are two different types of Python *object*. It is a feature of the ```input()``` function that whatever you type as your response, *even if it's a number*, the function treats it as a text string. This means that our variable ```born``` (or whatever name you used) will be a *text* type of object, even though the person typed in a number.
+In step 1 we mentioned that numbers and text strings are two different types of Python *object*. It is a feature of the ```input()``` function that whatever you type as your response, *even if it's a number*, the ```input()``` function treats it as a text string. This means that our variable ```born``` (or whatever name you used) will be a *text* type of object, even though the person typed in a number.
 
 You can check this using another Python function called ```type()```, which simply tells you the type of whatever object you put inside the brackets.
 
@@ -121,9 +121,13 @@ Repeat the line with the ```type()``` function after this conversion, and when y
 
 - the code now runs without an error!
 
+In case you wondered, there's another function ```str()``` which converts a number object into a text string. And a function ```float()``` which converts objects into decimal numbers.
+
 ## Does the code always give the right answer?
 
 The last thing printed is the computer's calculation of the person's age. But *sometimes it gives the wrong answer!* This happens if the person hasn't yet had a birthday this year, which means the computer calculates an age which is one too large.
+
+To make sure the computer always calculates the correct answer we need to check if the person has had a birthday this year or not.
 
 When you're ready, go on to [the next step](../step3/step3.md) and start learning Python graphics!
 
