@@ -141,6 +141,8 @@ It's always a good idea in a question like this to tell the user what sort of an
 
 You've probably come across coding ```if``` and ```else``` in Scratch. Here is what the Scratch block looks like:
 
+![Scratch if...else... block](scratch_if_else.png)
+
 
 
 When you're ready, go on to [the next step](../step3/step3.md) and start learning Python graphics!
