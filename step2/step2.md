@@ -44,7 +44,19 @@ Don't forget to add the first line of code in your new project:
 #!/bin/python3
 ```
 
-If we want to calculate someone's age, we first need to know what year they were born. Write code, using the ```input()``` function and a variable to ask the user to type in the year they were born.
+If we want to calculate someone's age, we need to know what year they were born and what year it is now.
+
+We could put the year now in a variable called ```this_year```:
+
+``` python
+this_year = 
+```
+
+where you have to add the correct year after the *equals* sign.
+
+Now we can ask the user what year they were born.
+
+Write code, using the ```input()``` function and a variable to ask the user to type in the year they were born.
 
 <details><summary>Hint</summary>
 
@@ -59,29 +71,21 @@ born = input('What year were you born? ')
 
 </details>
 
-The next thing we need is what year it is today. We could put this in a variable called ```this_year```:
-
-``` python
-this_year = 
-```
-
-where you have to add the correct year after the *equals* sign.
-
 Calculating someone's age is a simple subtraction sum. Add this line of code to subtract one variable from another:
 
 ``` python
 age = this_year - born
 ```
 
-If you didn't call your variable ```born``` then use your variable name instead.
+(If you didn't call your variable ```born``` then use your variable name instead.)
 
-This line is supposed to calculate the person's age, but our code won't tell us the answer unless we *print* it. So add another line
+This line calculates the person's age and puts the answer in a variable called ```age```, but our code won't *tell us* the answer unless we *print* it. So add another line
 
 ``` python
 print('You are', age)
 ```
 
-Click Run and see what happens. Oh no - there's an error. You can seen that the last line you typed is highlighted in red, and at the bottom of the editing panel is a message:
+Click Run and see what happens. Oh no - there's an error. You can seen that the line which does the subtraction sum is highlighted in red, and at the bottom of the editing panel is a message:
 
 ![Type Error](type_error.png)
 
@@ -113,7 +117,7 @@ Luckily there are functions which convert the type of a Python object, so to run
 born = int(born)
 ```
 
-This takes the variable born, converts it to integer type and puts the result back into the variable born.
+This takes the variable born, converts it to integer type and sets the label ```born``` to point to the integer.
 
 Repeat the line with the ```type()``` function after this conversion, and when you run the code you will see
 
@@ -129,13 +133,13 @@ The last number printed at the end of the Results panel is the computer's calcul
 
 To make sure the computer always calculates the correct answer we need to check if the person has had a birthday this year or not. Then we will be able to do a different calculation, depending on the answer.
 
-Add more code *before* the line which calculates the persons age (```age =``` etc). This will be another ```input()``` function, with another variable, to ask if the person has had a birthday this year. Here is one way to do it:
+We need to use another ```input()``` function, with another variable, to ask if the person has had a birthday this year. Add this code *just before* the line which calculates the persons age (```age =``` etc). Here is one way to do it, using a variable called ```birthday```:
 
 ``` python
 birthday = input('Have you had a birthday yet this year (y or n)?')
 ```
 
-It's always a good idea in a question like this to tell the user what sort of answer you are expecting - so the prompt string here ends with "(y or n)" to tell the user to input "y" or "n", instead of the words "yes" or "no".
+It's always a good idea in a question like this to tell the user what sort of answer you are expecting - so the prompt string here ends with "(y or n)" to tell the user to type "y" or "n", instead of the words "yes" or "no".
 
 So the user has answered "y" or "n" to the question, and this answer has been set to the variable ```birthday```. We can now tell the computer to do one calculation ***if*** the user answered "y", and a different calculation ***if*** the user answered "n", and for this we need to use the Python ```if``` block.
 
@@ -169,9 +173,9 @@ If you type in ```5 < 3``` and press Return it will tell you this is ```False```
 mynumber = 3
 ```
 
-then type ```mynumber < 5```. Will this be True or False? (The console will tell you it's True.) You could change the variable to a different number, say 7 (type ```mynumber = 7```), then check ```mynumber < 5``` again and this time it will tell you this statement is False.
+then type ```mynumber < 5```. Will this be True or False? (The console will tell you it's True.) You could change the variable to a different number, say 7 (type ```mynumber = 7```), then check ```mynumber < 5``` again, and this time it will tell you this statement is False.
 
-Another comparison we often want to do is to check if two things are equal to one another. But if you type into the console
+Another comparison we often want to do is to check if two things are equal to one another. But if you type into the console something which seems obviously true
 
 ``` python
 5 = 5
@@ -196,7 +200,44 @@ if birthday == "y":
 
 ```
 
-When you press Return after typing this you will notice that the cursor has jumped a couple of spaces to the right from the beginning of the next line
+When you press Return after typing this you will notice that the cursor has jumped a couple of spaces to the right from the beginning of the line - so the next code you type will be ***indented***. Indented lines are incredibly important in Python and act like the white spaces in the Scratch if block to show exactly which bit of code will run 
+
+We know if the person has had a birthday this year and they answered "y", the variable ```birthday``` will be set to "y", so when we make the statement ```birthday == "y"``` this will be ```True```. In this case we can use the calculation we did earlier and it will give the right answer. So in the next line we want to put the code
+
+``` python
+  age = this_year - born
+```
+
+but notice this line of code is *indented*.
+
+Now we need to consider what to do if the person has *not* had a birthday this year and they answered "n", in which case the variable ```birthday``` will be set to "n", so when we make the statement ```birthday == "y"``` this will be ```False```. The bit of code to run if the statement is ```False``` begins with the word ```else```.
+
+So the next line of code consists of the word ```else``` followed by a colon ```:```, but this line is ***not*** indented:
+
+``` python
+else:
+```
+
+When you type Return after this line you will see the cursor is indented again. The code for the ```else``` case will do the age calculation but adjusted to give an answer one less than before:
+
+``` python
+  age = this_year - born - 1
+```
+
+So the complete ```if``` block looks like this:
+
+``` python
+if birthday == "y":
+  age = this_year - born
+else:
+  age = this_year - born - 1
+```
+
+The final line of the programme is the line which prints the age. This will be the same as before, and because this
+
+The indentations show which lines of code should run in the True case and which lines should run in the False case. The blocks of code which are indented are signalled by a colon at the end of the previous line.
+
+Python uses this method of indentation to distinguish chunks of code in lots of places, not just in ```if``` blocks, but also in repeat loops and when we write our own functions.
 
 -----
 
