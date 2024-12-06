@@ -109,6 +109,8 @@ print(type(born))
 
 which tells you that this variable is of type ```'str'``` which is short for *string*.
 
+The error happens in the subtraction sum because we are trying to subtract a text object (the year born) from a number object (the year now), and Python won't allow this.
+
 ### Conversion of an object from one type to another
 
 Luckily there are functions which convert the type of a Python object, so to run our code we need to *convert* our "year born" variable from type ```'str'``` to object type integer. We can do this using the ```int()``` function. Put this line of code after the line with ```type()```:
