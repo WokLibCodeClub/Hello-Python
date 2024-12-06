@@ -137,13 +137,55 @@ birthday = input('Have you had a birthday yet this year (y or n)?')
 
 It's always a good idea in a question like this to tell the user what sort of answer you are expecting - so the prompt string here ends with "(y or n)" to tell the user to input "y" or "n", instead of the words "yes" or "no".
 
+So the user has answered "y" or "n" to the question, and this answer has been set to the variable ```birthday```. We can now tell the computer to do one calculation ***if*** the user answered "y", and a different calculation ***if*** the user answered "n", and for this we need to use the Python ``if``` block.
+
 ## The Python ```if``` block
 
 You've probably come across coding ```if``` and ```else``` in Scratch. Here is what the Scratch block looks like:
 
 ![Scratch if...else... block](scratch_if_else.png)
 
-In the hole after the word ```if``` you need to put some sort of statement which is either *True* or *False*, then in the white space below you put the code blocks to be run if the statement is True, and in the white space below the word else you put the code blocks to be run if the statement is False.
+In the hexagon-shaped hole after the word ```if``` you need to put some sort of statement which is either *True* or *False*, then in the white space below you put the code blocks to be run if the statement is True, and in the white space below the word else you put the code blocks to be run if the statement is False.
+
+The Python code for ```if ... else``` follows a similar pattern and also uses statements which can be either True or False. Let's first look at what we mean by a Python statement which is either True or False.
+
+### Python ```True``` or ```False```
+
+Go to a tab in your browser where you have the [Interactive Python Console](https://trinket.io/console) open.
+
+Here is a simple bit of Python code which is clearly True. Type this into the console:
+
+``` python
+5 > 3
+```
+
+and press Return. The console shows ```True``` which simply tells you that "5 is greater than 3" is a true statement.
+
+If you type in ```5 < 3``` and press Return it will tell you this is ```False```, because 5 is *not* less than 3, so "5 is less than 3" is a false statement.
+
+"Greater than" and "Less than" are examples of comparing one thing with another, called Comparisons, or sometimes Conditionals. Normally we would use these comparisons with variables. Make a variable in the console with
+
+``` python
+mynumber = 3
+```
+
+then type ```mynumber < 5```. Will this be True or False? (The console will tell you it's True.) You could change the variable to a different number, say 7 (type ```mynumber = 7```), then check ```mynumber < 5``` again and this time it will tell you this statement is False.
+
+Another comparison we often want to do is to find out if two things are equal to one another. But if you type into the console
+
+``` python
+5 = 5
+```
+
+it gives an error. This is because the equals sign has a special meaning in Python to do with setting variables, so it can't be used in a comparison. Instead Python uses a *double* equals sign ```==``` to check if two things are equal.
+
+So if you type ```5 == 5``` the console will now tell you this is ```True```.
+
+You can use the equals comparison with text strings as well as numbers, and that's what we'll do in our Age Calculator code.
+
+### Back to Python ```if``` block
+
+Go back to the Age Calculator code. We've just asked the user to 
 
 -----
 
