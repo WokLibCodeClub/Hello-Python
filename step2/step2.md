@@ -107,7 +107,7 @@ which tells you that this variable is of type ```'str'``` which is short for *st
 
 ### Conversion of an object from one type to another
 
-Luckily there are functions which convert the type of a Python object, so to run our code we need to *convert* our "year born" variable from type ```'str'``` to be an integer. We can do this using the ```int()``` function. Put this line of code after the line with ```type()```:
+Luckily there are functions which convert the type of a Python object, so to run our code we need to *convert* our "year born" variable from type ```'str'``` to object type integer. We can do this using the ```int()``` function. Put this line of code after the line with ```type()```:
 
 ``` python
 born = int(born)
@@ -117,15 +117,15 @@ This takes the variable born, converts it to integer type and puts the result ba
 
 Repeat the line with the ```type()``` function after this conversion, and when you run the code you will see
 
-- that the variable has changed from type ```<class 'str'>``` to ```<class 'int'>```
+1. that the variable has changed from type ```<class 'str'>``` to ```<class 'int'>``` (short for integer)
 
-- the code now runs without an error!
+2. the code now runs without an error!
 
 In case you wondered, there's another function ```str()``` which converts a number object into a text string. And a function ```float()``` which converts objects into decimal numbers.
 
 ## Does the code always give the right answer?
 
-The last thing printed is the computer's calculation of the person's age. But *sometimes it gives the wrong answer!* This happens if the person hasn't yet had a birthday this year, which means the computer calculates an age which is one too large.
+The last number printed at the end of the Results panel is the computer's calculation of the person's age. But *sometimes it gives the wrong answer!* This happens if the person hasn't yet had a birthday this year, which means the computer calculates an age which is one too large.
 
 To make sure the computer always calculates the correct answer we need to check if the person has had a birthday this year or not. Then we will be able to do a different calculation, depending on the answer.
 
@@ -137,7 +137,7 @@ birthday = input('Have you had a birthday yet this year (y or n)?')
 
 It's always a good idea in a question like this to tell the user what sort of answer you are expecting - so the prompt string here ends with "(y or n)" to tell the user to input "y" or "n", instead of the words "yes" or "no".
 
-So the user has answered "y" or "n" to the question, and this answer has been set to the variable ```birthday```. We can now tell the computer to do one calculation ***if*** the user answered "y", and a different calculation ***if*** the user answered "n", and for this we need to use the Python ``if``` block.
+So the user has answered "y" or "n" to the question, and this answer has been set to the variable ```birthday```. We can now tell the computer to do one calculation ***if*** the user answered "y", and a different calculation ***if*** the user answered "n", and for this we need to use the Python ```if``` block.
 
 ## The Python ```if``` block
 
