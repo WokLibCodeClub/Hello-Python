@@ -200,7 +200,7 @@ if birthday == "y":
 
 ```
 
-When you press Return after typing this you will notice that the cursor has jumped a couple of spaces to the right from the beginning of the line - so the next code you type will be ***indented***. Indented lines are incredibly important in Python and act like the white spaces in the Scratch if block to show exactly which bit of code will run 
+When you press Return after typing this you will notice that the cursor has jumped a couple of spaces to the right from the beginning of the line - so the next code you type will be ***indented***. Indented lines are incredibly important in Python and act like the white spaces in the Scratch if block to show exactly which bit of code will run for which case.
 
 We know if the person has had a birthday this year and they answered "y", the variable ```birthday``` will be set to "y", so when we make the statement ```birthday == "y"``` this will be ```True```. In this case we can use the calculation we did earlier and it will give the right answer. So in the next line we want to put the code
 
@@ -233,11 +233,13 @@ else:
   age = this_year - born - 1
 ```
 
-The final line of the programme is the line which prints the age. This will be the same as before, and because this
+The final line of the programme is the line which prints the age. This will be the same as before, but this line will *not be indented*, because we want it to run in both cases, whether the answer to the birthday question was "y" or "n".
+
+We now have an age calculator programme which will give the correct answer for everybody.
 
 The indentations show which lines of code should run in the True case and which lines should run in the False case. The blocks of code which are indented are signalled by a colon at the end of the previous line.
 
-Python uses this method of indentation to distinguish chunks of code in lots of places, not just in ```if``` blocks, but also in repeat loops and when we write our own functions.
+Python uses this indentation method to distinguish chunks of code in lots of places, not just in ```if``` blocks, but also in repeat loops and when we write our own functions.
 
 -----
 
