@@ -270,6 +270,8 @@ There are some words you should avoid for variable names, as these are Python *k
 
 Be careful!! Python is very fussy about capital letters and small letters. If you made a variable called ```letter``` and another one called ```Letter``` Python would treat these as *completely separate* variables.
 
+-----
+
 That's enough for the first step in Python coding. Take a break or go on to [step 2](../step2/step2.md).
 
 [Back to front page](../README.md)
