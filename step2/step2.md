@@ -129,7 +129,7 @@ The last number printed at the end of the Results panel is the computer's calcul
 
 To make sure the computer always calculates the correct answer we need to check if the person has had a birthday this year or not. Then we will be able to do a different calculation, depending on the answer.
 
-Add more code *before* calculating the persons age. This will be another ```input()``` function, with another variable, to say if the person has had a birthday this year. Here is one way to do it:
+Add more code *before* the line which calculates the persons age (```age =``` etc). This will be another ```input()``` function, with another variable, to ask if the person has had a birthday this year. Here is one way to do it:
 
 ``` python
 birthday = input('Have you had a birthday yet this year (y or n)?')
@@ -145,9 +145,9 @@ You've probably come across coding ```if``` and ```else``` in Scratch. Here is w
 
 ![Scratch if...else... block](scratch_if_else.png)
 
-In the hexagon-shaped hole after the word ```if``` you need to put some sort of statement which is either *True* or *False*, then in the white space below you put the code blocks to be run if the statement is True, and in the white space below the word else you put the code blocks to be run if the statement is False.
+In the hexagon-shaped hole after the word ```if``` you need to put some sort of statement which is either *True* or *False*, then in the white space below you put the code blocks to be run if the statement is True, and in the white space below the word *else* you put the code blocks to be run if the statement is False.
 
-The Python code for ```if ... else``` follows a similar pattern and also uses statements which can be either True or False. Let's first look at what we mean by a Python statement which is either True or False.
+The Python code for ```if ... else``` follows a similar pattern and also uses statements which can be either True or False. Let's first look at  Python statements which are either True or False.
 
 ### Python ```True``` or ```False```
 
@@ -159,7 +159,7 @@ Here is a simple bit of Python code which is clearly True. Type this into the co
 5 > 3
 ```
 
-and press Return. The console shows ```True``` which simply tells you that "5 is greater than 3" is a true statement.
+and press Return. The console shows ```True``` which simply tells you that the statement "5 is greater than 3" is true .
 
 If you type in ```5 < 3``` and press Return it will tell you this is ```False```, because 5 is *not* less than 3, so "5 is less than 3" is a false statement.
 
@@ -171,7 +171,7 @@ mynumber = 3
 
 then type ```mynumber < 5```. Will this be True or False? (The console will tell you it's True.) You could change the variable to a different number, say 7 (type ```mynumber = 7```), then check ```mynumber < 5``` again and this time it will tell you this statement is False.
 
-Another comparison we often want to do is to find out if two things are equal to one another. But if you type into the console
+Another comparison we often want to do is to check if two things are equal to one another. But if you type into the console
 
 ``` python
 5 = 5
@@ -185,7 +185,18 @@ You can use the equals comparison with text strings as well as numbers, and that
 
 ### Back to Python ```if``` block
 
-Go back to the Age Calculator code. We've just asked the user to 
+Go back to the Age Calculator code. We've just asked the user to answer "y" or "n" to the question about whether they've had a birthday this year, and this answer has been set to the variable ```birthday```.
+
+The next line of code will begin with the word ```if```. Then we need a statement which can be either True or False - here we could use the statement that the variable ```birthday``` is set to "y", and the line finishes with a **colon** ```:```.
+
+Here is the code for the first line of the ```if``` block:
+
+``` python
+if birthday == "y":
+
+```
+
+When you press Return after typing this you will notice that the cursor has jumped a couple of spaces to the right from the beginning of the next line
 
 -----
 
