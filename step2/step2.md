@@ -143,8 +143,12 @@ You've probably come across coding ```if``` and ```else``` in Scratch. Here is w
 
 ![Scratch if...else... block](scratch_if_else.png)
 
+In the hole after the word ```if``` you need to put some sort of statement which is either *True* or *False*, then in the white space below you put the code blocks to be run if the statement is True, and in the white space below the word else you put the code blocks to be run if the statement is False.
 
+-----
 
-When you're ready, go on to [the next step](../step3/step3.md) and start learning Python graphics!
+- When you're ready, go on to the [next step](../step3/step3.md) and start learning Python graphics!
 
-Back to [previous step](../step1/step1.md).
+- Back to [previous step](../step1/step1.md).
+
+- Back to [front page](../README.md)
