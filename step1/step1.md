@@ -260,6 +260,8 @@ myname = "Hagrid"
 
 puts the text string object ```"Hagrid"``` in a storage box, and puts the label ```myname``` on the box.
 
+**Note:** In Python the ```=``` sign has a slightly different meaning from the way it's used in maths. In maths it indicates two things which are equal to each other; in Python it means you take a Python object, which is on the *right* of the = sign, and give it a label (variable name), which is on the *left* of the = sign.
+
 ### Variable names
 
 You can use any letter of the alphabet, capital or small, in your variable names, and the numbers 0 to 9 and the underscore ```_``` character, BUT the first character of the variable name *can't* be a number.
