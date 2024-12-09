@@ -69,6 +69,16 @@ If you click Run you will now see your turtle!
 
 ![Turtle on screen](turtle2.png)
 
+Other shapes you can try for your turtle are ```'arrow', 'circle', 'square', 'triangle', 'classic'```. Don't forget: you need to put quotes around these shapes.
+
+You can also change the colour of your turtle. (Again, look out for using the American spelling color.)
+
+``` python
+t.color('green')
+```
+
+Click Run to see the results. There is a huge range of colours you can use for your turtles (and screens). [This web page](https://trinket.io/docs/colors) has a useful list of all the available colours. Click on a square to see what the colour is called.
+
 -----
 
 - When you're ready, go on to the [next step](../step4/step4.md) and find out about Python lists, while writing a *Hogwarts Sorting Hat* programme.
