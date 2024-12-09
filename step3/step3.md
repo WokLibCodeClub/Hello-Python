@@ -45,10 +45,29 @@ The screen has a ***coordinate system***. This works in a similar way to Scratch
 
 ## A turtle to do the drawing
 
-Here is the code to make a turtle:
+Our graphics programming will consist of making sprites, called *turtles*, and moving them around the screen, sometimes drawing lines behind them and sometimes not.
+
+Here is some code to make our first ever turtle:
 
 ``` python
 t = Turtle()
+```
+
+This is exactly the same code as we used to make variables before - for example, ```myname = "Hagrid"``` - the difference is that we are not making a text string for our variable, we are making a *Turtle* object.
+
+We've used a variable name ```t``` for this turtle, but (as with the Screen) you can use *any* valid variable name for a turtle.
+
+Now that we've made a turtle object, and linked it to a variable, we have access to a whole lot of turtle functions to set and control our turtle object.
+
+One thing we can do is set the shape for our turtle object. Here is the code to set it to the shape of a turtle
+
+``` python
+t.shape('turtle')
+```
+
+If you click Run you will now see your turtle!
+
+![Turtle on screen](turtle2.png)
 
 -----
 
