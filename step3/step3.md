@@ -113,7 +113,7 @@ Now change all your lines which say ```t.forward(100)``` to say ```t.forward(squ
 
 ### More about lines
 
-Sometimes you don't want the turtle to draw a line behind it. The commands to stop this are almost exactly the same as Scratch:
+Sometimes you don't want the turtle to draw a line behind it. The commands to control this are almost exactly the same as Scratch:
 
 ```t.penup()``` will stop the turtle drawing a line, and ```t.pendown()``` will start it drawing again.
 
@@ -150,7 +150,13 @@ t.end_fill()
 
 ### Speeing things up
 
+Maybe the turtle moves a little bit too slowly for you. There is a way you can adjust the speed, using the command:
 
+``` python
+t.speed(8)
+```
+
+You can adjust the number in the brackets - 1 is very slow, 10 is very fast, but, in fact, the fastest speed is when you set the speed to 0.
 
 ## First Python "repeat" loop
 
