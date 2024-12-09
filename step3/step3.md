@@ -22,7 +22,9 @@ The next line of code will create a graphics screen for our drawing. We will use
 s = Screen()
 ```
 
-(Don't forget the brackets after the word Screen.)
+(Don't forget the brackets after the word Screen, and be sure you use a capital S.) Our project now contains a *new* type of Python object - not a number or a text string, but a *Turtle Screen* object. If you use ```type(s)``` to investigate the type of the variable ```s``` you will find it is of type ```Screen```.
+
+We chose ```s``` as the variable name for our screen, but you can use *any* Python variable name which follows the rules for the screen.
 
 We can set the size of our graphics screen in *pixels*. In the code below we specify a size of 400 pixels across, and 400 pixels from top to bottom.
 
@@ -30,7 +32,7 @@ We can also specify the background colour of our screen - here we have used *lig
 
 ``` python
 s.setup(400,400)
-s.bgcolor('lightblue')
+s.bgcolor('lightblue') # short for background color
 ```
 
 Click on **Run** and you should see a light blue square shape in the place where you normally see printed results.
@@ -39,7 +41,14 @@ Click on **Run** and you should see a light blue square shape in the place where
 
 If your screen is quite small and you can't see the whole of the square you can actually *drag* the bar between the editing window and the results panel from side to side. Make sure you can see the complete coloured square.
 
+The screen has a ***coordinate system***. This works in a similar way to Scratch coordinates with x = 0, y = 0 as the point in the middle of the screen. In our case the size of the screen is 400 pixels in both directions, which means the minimum x coordinate (at the left edge) is -200, and the maximum x coordinate (at the right edge) is +200. Similarly for y coordinates, the minimum (at the bottom) is -200 and the maximum (at the top) is +200.
 
+## A turtle to do the drawing
+
+Here is the code to make a turtle:
+
+``` python
+t = Turtle()
 
 -----
 
