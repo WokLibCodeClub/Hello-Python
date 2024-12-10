@@ -189,6 +189,8 @@ So if you type ```5 == 5``` the console will now tell you this is ```True```.
 
 You can use the equals comparison with text strings as well as numbers, and that's what we'll do in our Age Calculator code.
 
+Sometimes we want to check if one thing is *not* equal to another. The Python code for "not equals" is ```!=``` - so we could write ```'black' != 'white'``` and this would be ```True```.
+
 ### Back to Python ```if``` block
 
 Go back to the Age Calculator code. We've just asked the user to answer "y" or "n" to the question about whether they've had a birthday this year, and this answer has been set to the variable ```birthday```.
