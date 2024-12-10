@@ -123,7 +123,7 @@ You can also change the thickness of the line:
 
 ### More about colours
 
-Turtles can actually have *two* colours - one for the outline of the shape (which is also the pen colour for drawing lines), and another for the fill colour in the middle. 
+Turtles can actually have *two* colours - one for the outline of the shape (which is also the pen colour for drawing lines), and another for the fill colour in the middle.
 
 If you change your code which sets the turtle colour to
 
@@ -212,6 +212,35 @@ t.end_fill()
 ```
 
 Run the code and see what happens.
+
+It looks as if our turtle is going to go round for ever  - in fact it will. We have accidentally created a Python *forever* loop, because we have used ```while``` with a statement which is *always true*. You can make a Python forever loop this way using any statement which is always true: eg ```5 < 7```; ```'black' != 'white'``` but the normal way is to use the word ``True```. So a Python forever loop would normally begin:
+
+``` python
+while True:
+```
+
+But we don't want a Python forever loop, we want one which will run four times, then stop. The way to do this is to add an extra line inside the loop which increases the counter by 1, each time we run the loop.
+
+One way to increase the value of a variable by one is to use this code:
+
+``` python
+counter = counter + 1
+```
+
+If this was a maths sum it would look like complete nonsense, but in Python the equals sign isn't used to indicate two things are equal, it's used to set the value of a variable.
+
+In this code Python starts at the right hand side, looks at the value of variable *counter* and adds one to it; then the equals sign has the effect of taking this new increased number and setting the counter variable equal to it.
+
+Actually, increasing the value of a variable by 1 is something we need to do *so often* that we have a little shortcut for it. So the quick way to increase variable *counter* by 1 is to use the code:
+
+``` python
+counter += 1
+```
+
+Add this line as the last line *inside* the ```while``` loop (underneath ```t.left(90)```) - which means it has to be indented, and now run the code again. You should find the turtle goes once round the square and stops.
+
+It's worth thinking through how the loop is operating, step by step: we set counter to 0, then go to the while loop - Python looks at ```counter < 4```
+and decides this is true, so runs the loop. Inside the loop we increase counter by 1, so it's now set to 1. Python goes back to the while line, looks at ```counter < 4``` and decides this is still true, so runs the loop again. Inside the loop we increase counter by 1, so it's now set to 2 etc etc. Once we've run the loop four times we finally set counter to 4. Python goes back to the ```while``` line, looks at ```counter < 4``` but now decides this is not true (because counter equals 4, so it's no longer less than 4), so the loop stops, and Python goes on to the rest of the code.
 
 -----
 
