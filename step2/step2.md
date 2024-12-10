@@ -191,6 +191,8 @@ You can use the equals comparison with text strings as well as numbers, and that
 
 Sometimes we want to check if one thing is *not* equal to another. The Python code for "not equals" is ```!=``` - so we could write ```'black' != 'white'``` and this would be ```True```.
 
+There is one thing in Python which is always true - and that is the word ```True```. Note that we don't put this inside quotes because it is not a text string. Similarly, something which is always false is the word ```False```.
+
 ### Back to Python ```if``` block
 
 Go back to the Age Calculator code. We've just asked the user to answer "y" or "n" to the question about whether they've had a birthday this year, and this answer has been set to the variable ```birthday```.
