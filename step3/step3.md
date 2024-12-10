@@ -195,7 +195,7 @@ Then as the next line add:
 while counter < 4:
 ```
 
-Here, our true or false statement is ```counter < 4```
+Here, our true-or-false statement is ```counter < 4```
 and since we just set counter to 0 this statement will obviously be true.
 
 Now, take the next two lines of code and *indent* them - you can do this by placing the cursor at the beginning of the line and pressing the TAB key once. These are the lines which will be repeated.
@@ -213,7 +213,7 @@ t.end_fill()
 
 Run the code and see what happens.
 
-It looks as if our turtle is going to go round for ever  - in fact it will. We have accidentally created a Python *forever* loop, because we have used ```while``` with a statement which is *always true*. You can make a Python forever loop this way using any statement which is always true: eg ```5 < 7```; ```'black' != 'white'``` but the normal way is to use the word ``True```. So a Python forever loop would normally begin:
+It looks as if our turtle is going to go round for ever  - in fact it will. We have accidentally created a Python *forever* loop, because we have used ```while``` with a statement which is *always true*. You can make a Python forever loop this way using any statement which is always true: eg ```5 < 7```; ```'black' != 'white'``` but the normal way is to use the word ```True```. So a Python forever loop would normally begin:
 
 ``` python
 while True:
@@ -229,7 +229,7 @@ counter = counter + 1
 
 If this was a maths sum it would look like complete nonsense, but in Python the equals sign isn't used to indicate two things are equal, it's used to set the value of a variable.
 
-In this code Python starts at the right hand side, looks at the value of variable *counter* and adds one to it; then the equals sign has the effect of taking this new increased number and setting the counter variable equal to it.
+In this code Python starts at the right hand side, looks at the value of variable *counter* and adds one to it; then the equals sign has the effect of taking this new increased number and setting (updating, really) the counter variable equal to it.
 
 Actually, increasing the value of a variable by 1 is something we need to do *so often* that we have a little shortcut for it. So the quick way to increase variable *counter* by 1 is to use the code:
 
@@ -241,6 +241,10 @@ Add this line as the last line *inside* the ```while``` loop (underneath ```t.le
 
 It's worth thinking through how the loop is operating, step by step: we set counter to 0, then go to the while loop - Python looks at ```counter < 4```
 and decides this is true, so runs the loop. Inside the loop we increase counter by 1, so it's now set to 1. Python goes back to the while line, looks at ```counter < 4``` and decides this is still true, so runs the loop again. Inside the loop we increase counter by 1, so it's now set to 2 etc etc. Once we've run the loop four times we finally set counter to 4. Python goes back to the ```while``` line, looks at ```counter < 4``` but now decides this is not true (because counter equals 4, so it's no longer less than 4), so the loop stops, and Python goes on to the rest of the code.
+
+## A shape of many sides
+
+Squares are nice, but could we change our code to get our turtle to draw a five-sided figure?
 
 -----
 
