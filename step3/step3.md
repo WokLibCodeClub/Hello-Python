@@ -160,7 +160,58 @@ You can adjust the number in the brackets - 1 is very slow, 10 is very fast, but
 
 ## First Python "repeat" loop
 
+Unfortunately the code we've written for our turtle is not very good Python coding - there's a lot of repitition in it, and repetition is something coders always try to avoid.
 
+(If you look at the code you will see we have the two lines
+
+``` python
+t.forward(square_size)
+t.left(90)
+```
+
+four times in a row.)
+
+The way to avoid repetition is to put the bits of code that are repeated inside a *repeat loop*. You might already have used one of the Repeat blocks in Scratch which uses the same idea.
+
+In Python there are two types of repeat loop, one begins with the word ```for``` and the other with the word ```while```. We'll do the ```while``` loop here, and cover the ```for``` loop in step 4.
+
+In many ways the ```while``` loop looks a lot like a Python ```if``` block, which we looked at in [step 2](../step2/step2.md#the-python-if-block). At the start of the set of lines which we want to repeat we have a line which starts with the word ```while```, followed by a statement which is either true or false, followed by a colon ```:```. Then, *all* the lines which we want to repeat in this loop are *indented*.
+
+Here's how it works: Python looks at the ```while``` line, and checks if the statement is true or false. If it's true then Python runs the repeat block (the lines of code which are indented), then checks the ```while``` line again to see if the statement is still true. If it is then Python runs the repeat block *again*, and it keeps repeating this block of code as long as the statement is true; however if it finds the statement has changed to become false, then Python ignores the lines in the repeat block, and goes on to the rest of the code.
+
+There's one further thing we need to make a ```while``` repeat loop - we need a variable, which we use to count how many times we run the loop.
+
+Add this line of code after the ```begin_fil()``` line:
+
+``` python
+counter = 0
+```
+
+This is the variable we'll use to keep count and we've set it to have the value 0. (You can use a different variable name if you want.)
+
+Then as the next line add:
+
+``` python
+while counter < 4:
+```
+
+Here, our true or false statement is ```counter < 4```
+and since we just set counter to 0 this statement will obviously be true.
+
+Now, take the next two lines of code and *indent* them - you can do this by placing the cursor at the beginning of the line and pressing the TAB key once. These are the lines which will be repeated.
+
+The next six lines you should *delete*. So your segment of code should look like this:
+
+``` python
+t.begin_fill()
+counter = 0
+while counter < 4:
+  t.forward(square_size)
+  t.left(90)
+t.end_fill()
+```
+
+Run the code and see what happens.
 
 -----
 
