@@ -319,6 +319,8 @@ We've now made a nice turtle project to draw shapes of different numbers of side
 
 CONGRATULATIONS!!!
 
+[Here](step3.py) is a link to the complete code for step 3.
+
 -----
 
 - When you're ready, go on to the [next step](../step4/step4.md) and find out about Python lists, while writing a *Hogwarts Sorting Hat* programme.
