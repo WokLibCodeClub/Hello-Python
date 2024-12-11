@@ -246,6 +246,18 @@ and decides this is true, so runs the loop. Inside the loop we increase counter 
 
 Squares are nice, but could we change our code to get our turtle to draw a five-sided figure?
 
+One obvious change is to make our loop repeat 5 times instead of 4. What would you change to make this happen?
+
+<details><summary>Click here if you don't know</summary>
+
+``` python
+while counter < 5:
+```
+  
+</details><br>
+
+But if you run your code you will see there's something else you also need to change: it's the angle the turtle turns at the end of each
+
 -----
 
 - When you're ready, go on to the [next step](../step4/step4.md) and find out about Python lists, while writing a *Hogwarts Sorting Hat* programme.
