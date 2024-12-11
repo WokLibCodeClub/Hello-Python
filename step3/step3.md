@@ -254,7 +254,7 @@ One obvious change is to make our loop repeat 5 times instead of 4. What would y
 while counter < 5:
 ```
   
-</details><br>
+</details>
 
 But if you run your code you will see there's something else you also need to change: it's the angle the turtle turns at the end of each side. Can you work out what the angle needs to be?
 
@@ -272,7 +272,7 @@ turn in four equal steps, so each step was a quarter of 360°, which is 90°. Fo
   t.left(360 / 5)
 ```
   
-</details><br>
+</details>
 
 
 
