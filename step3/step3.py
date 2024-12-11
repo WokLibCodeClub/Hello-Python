@@ -15,7 +15,7 @@ t.penup()
 t.goto(-50,-50)
 t.pendown()
 
-num_sides = 12
+num_sides = 7
 size = 400 / num_sides
 
 t.begin_fill()
