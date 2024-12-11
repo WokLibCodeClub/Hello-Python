@@ -165,7 +165,7 @@ Unfortunately the code we've written for our turtle is not very good Python codi
 (If you look at the code you will see we have the two lines
 
 ``` python
-t.forward(square_size)
+t.forward(size)
 t.left(90)
 ```
 
@@ -206,7 +206,7 @@ The next six lines you should *delete*. So your segment of code should look like
 t.begin_fill()
 counter = 0
 while counter < 4:
-  t.forward(square_size)
+  t.forward(size)
   t.left(90)
 t.end_fill()
 ```
@@ -267,7 +267,6 @@ We see in the case of the square it made this 360°
 turn in four equal steps, so each step was a quarter of 360°, which is 90°. For our five-sided figure we need to make this turn in five equal steps. You could easily work out the required angle with a calculator, but that would be a waste of effort. Why? Because Python is really good at doing calculations, so we can easily get Python to work out the angle. Like this:
 <p></p>
 
-
 ``` python
   t.left(360 / 5)
 ```
@@ -275,6 +274,50 @@ turn in four equal steps, so each step was a quarter of 360°, which is 90°. Fo
 </details>
 
 If we want to change the code for a six-sided figure you would change the 5s to 6s - you'd have to do this in two places. We can write our code so you only need to make the change in one place by using a variable.
+
+Make a new variable for the number of sides for your shape, but make this *before* the ```size``` variable. Here we've used ```num_sides```, short for number of sides, but you can use any name you like.
+
+``` python
+num_sides = 6
+size = 100
+```
+
+Now we need to go to the two places in our ```while``` loop where we had the number 5, and change this to the variable name ```num_sides```.
+
+Now, if we want to change the number of sides, we just change the variable ```num_sides``` and Python does all the rest of the calculating.
+
+But you might notice if you make the number of sides larger than 6 the turtle goes off the edges of the screen as it draws.
+
+There are two ways to fix this.
+
+The first way is to move the turtle's starting position. When you make a new turtle it is always situated at position x = 0, y = 0, which is in the middle of the screen. One of the really important turtle functions moves the turtle to a different position:
+
+``` python
+t.goto(50, -100)
+```
+
+If you put this line in your code just after you've set the turtle colours you will see that it moves the turtle to coordinates x = 50, y = -100 before drawing the shape.
+
+You will also see that it draws a line behind it as it moves. How could you add a ```t.penup()``` and a ```t.pendown()``` command to your code to stop it drawing a line before it draws the shape?
+
+These are not very good coordinates for a starting position. You really want the turtle to start somewhere in the bottom-left part of the screen. Find some different x and y coordinates to move the turtle to the bottom-left part of the screen.
+
+The second way to avoid the turtle disappearing off the screen as it draws a many-sided shape is by changing the size of the shape as the number of sides increases. We want the variable ```size``` to have a smaller value as the variable ```num_sides``` gets bigger. Can you work out a maths sum which we can use to set the variable ```size``` which will do this?
+
+<details><summary>Here's one way to do it</summary>
+<br>
+One way is to use division, so if you take a number like 400, and divide it by 4, for a four-sided shape, it will give you a size of 100. If you divide it by 5, for a five-sided shape, it will give you a size of 80, which is slightly smaller. As you increase the number of sides the result of the division sum will get smaller and smaller. Put this into code like this:
+<p></p>
+
+``` python
+size = 400 / num_sides
+```
+  
+</details>
+
+We've now made a nice turtle project to draw shapes of different numbers of sides, and fixed the code so the turtle doesn't disappear off the screen.
+
+CONGRATULATIONS!!!
 
 -----
 
