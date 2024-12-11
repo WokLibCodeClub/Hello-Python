@@ -106,10 +106,10 @@ If we wanted to draw a bigger square we could change all the number 100s to a di
 Before you move your turtle insert this line of code:
 
 ``` python
-square_size = 100
+size = 100
 ```
 
-Now change all your lines which say ```t.forward(100)``` to say ```t.forward(square_size)```. Now if you want to change the size of your square you only need to make *one* change: in the line where you set the value of the variable.
+Now change all your lines which say ```t.forward(100)``` to say ```t.forward(size)```. Now if you want to change the size of your square you only need to make *one* change: in the line where you set the value of the variable.
 
 ### More about lines
 
@@ -274,7 +274,7 @@ turn in four equal steps, so each step was a quarter of 360°, which is 90°. Fo
   
 </details>
 
-
+If we want to change the code for a six-sided figure you would change the 5s to 6s - you'd have to do this in two places. We can write our code so you only need to make the change in one place by using a variable.
 
 -----
 
