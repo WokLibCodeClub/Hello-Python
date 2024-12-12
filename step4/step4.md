@@ -33,6 +33,31 @@ from random import randint
   
 </details>
 
+Since there are four houses in Hogwarts School we will generate a random integer between 1 and 4. Put this in a variable. You can pick any name for the variable but it would be useful to have a name that indicates this is a random number. (WARNING: *don't* use the name ```randint``` as this is the name of a function, and you should avoid giving variables the same names as functions.) Look back at previous code if you aren't sure how to do this. (You will find a clue in [step 1](../step1/step1.md) in the section on Python libraries.)
+
+Now we will make a rather complicated ```if ... else``` block to select the house. In the code below you need to put the name of your random number variable in place of the four asterisks:
+
+``` python
+if **** == 1:
+  house = 'Hufflepuff'
+elif **** == 2:
+  house = 'Slytherin'
+elif **** == 3:
+  house = 'Gryffindor'
+else:
+  house = 'Ravenclaw'
+
+print(house)
+```
+
+If you Run the code several times, it will print one of the four Hogwarts houses at random.
+
+The words ```if``` and ```else``` we have already used in the *Age Calculator* code, but we haven't come across ```elif``` before.
+
+```elif``` is short for 'else if' and it's a way of testing more than one statement inside a Python ```if``` block. If you work through this code you will see that it is testing for all the possible values of the random number. If it's a 1 (the line beginning ```if```) then we will select the house 'Hufflepuff', but if it's not a 1 it could still be 2, 3 or 4. The next line, with ```elif``` now tests to see if it's a 2, in which case the house will be 'Slytherin'. But the random number could still be 3 or 4, so we need to do yet another test. First we test if it's a 3, with another ```elif``` line, which will make the house 'Gryffindor'. Finally, if the random number is not 1, 2 or 3, then it *must* be 4, so we don't need to test it - we just say ```else```, which means all the other tests have failed, in which case the house is 'Ravenclaw'.
+
+You can put as many ```elif``` blocks as you need inside a Python ```if``` block. 
+
 ## Lists in Python
 
 ## The Python ```for``` loop
