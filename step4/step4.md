@@ -20,10 +20,10 @@ We'll start by writing a rather long and clumsy piece of code, and then show how
 
 If we're going to pick a house at random then we will need to import from the ```random``` library the function ```randint```, which generates a random integer. Look back at your previous projects and see if you can find one which uses this function. Copy the line of code which contains the word ```import``` and paste it in at the beginning of the new project.
 
-<details><summary>If you're *really* not sure how to do this...</summary>
+<details><summary>If you're <i>really</i> not sure how to do this...</summary>
 <br>
 Copying code from another project (your own or someone else's) is a very good way of getting familiar with Python, so you will be helping yourself if you get used to doing this.
-
+<p></p>
 Here is the line of code you need:
 <p></p>
 
