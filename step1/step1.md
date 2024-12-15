@@ -266,7 +266,7 @@ puts the text string object ```"Hagrid"``` in a storage box, and puts the label 
 
 In Python there is a lot of scope to give variables any name you like, but there are some rules you have to follow when you choose a name for your variables.
 
-You can use any letter of the alphabet, capital or small, in your variable names, and the numbers 0 to 9 and the underscore ```_``` character, BUT the first character of the variable name *can't* be a number.
+You can use any letter of the alphabet, capital or small, in your variable names, and also the numbers 0 to 9 and the underscore ```_``` character, BUT the first character of the variable name *can't* be a number.
 
 There are some words you should avoid for variable names, as these are Python *key words* used in other Python commands - these are
 
