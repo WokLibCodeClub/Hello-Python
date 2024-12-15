@@ -196,8 +196,6 @@ Sometimes you only want to import *one* function from a library. If you only wan
 from random import randint
 ```
 
-Add this line at the top of your code (after the ```#!/bin/python3``` line).
-
 The ```randint()``` function generates random integers - put two numbers inside the brackets to show the smallest and largest numbers you want to generate. For example:
 
 ``` python
@@ -213,8 +211,6 @@ To import the ```sleep``` function from the ```time``` library you would use
 ``` python
 from time import sleep
 ```
-
-Add this line at the top of your code (after the other ```import``` line.)
 
 Once you've imported the ```sleep``` function you can use it in your code. For example, this code would make the Python code *wait* for 5 seconds:
 
