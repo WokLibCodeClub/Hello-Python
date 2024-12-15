@@ -28,7 +28,7 @@ Click on the triangle labelled **Run** and see what happens.
 
 Now change the single quote marks ```'``` to double quote marks ```"``` and see what happens.
 
-Python names letters and/or numbers inside quote marks a *text string*. A text string is a type of Python *object*. Python lets you use single quotes or double quotes to make a text string.
+When we put letters and/or numbers inside quote marks Python calls this a *text string*. A text string is a type of Python *object*. Python lets you use single quotes or double quotes to make a text string.
 
 Many Python functions let you put more than one thing inside the brackets, and in this case you have to separate the different items with a comma ```,```. Try
 
