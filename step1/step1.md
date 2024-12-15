@@ -154,7 +154,7 @@ Now this
 "20" + 24
 ```
 
-The last one gives an error because we are accidentally mixing different types of objects in the addition sum: ```"20"``` is a text string and ```24``` is a number. You can add objects of the *same* type but you can't mix types in addition.
+The last one gives an error because we are accidentally mixing different types of objects in the addition sum: ```"20"``` is a text string and ```24``` is a number. You can add together objects of the *same* type but you can't mix types in addition.
 
 In the next step we will come across special functions which can change Python objects from one type to another.
 
