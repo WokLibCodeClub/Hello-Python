@@ -166,7 +166,7 @@ Every time you run the code it will carry out all the instructions from the top.
 
 To make Python ignore a line of code place the ```#``` character in the left hand column - this turns that line of code into a *comment*, which is skipped over by Python.
 
-In fact *comments* are extremely useful because you can use them to make notes in the middle of your code about what each bit of code is doing. As you write more complicated code comments can save you a lot of time in locating a bit of your code which might need editing.
+In fact *comments* are extremely useful because you can use them to make notes in the middle of your code about what each bit of code is doing. As you write more complicated code comments can save you a lot of time in helping you find the right bit of your code which might need editing.
 
 For example, you could put this comment line above the lines of code where you used the addition, subtraction, multiplication and division operators:
 
