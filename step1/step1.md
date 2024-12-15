@@ -70,7 +70,7 @@ Click on **Run** to try out your code.
 
 You might notice that the last sum  - the division sum - prints the answer slightly differently to the others as it prints a decimal point and a zero after the answer.
 
-Python has different types of number objects and the two main types are whole numbers, called *integers*, which don't have any decimal values, and decimal numbers, called *floating point numbers* which have decimals. When Python does a division sum it *always* gives the answer as a decimal number, not a whole number.
+Python has different types of number objects and the two main types are whole numbers, called *integers*, which don't have any decimal values, and decimal numbers, called *floating point numbers* which have a decimal point, and numbers after it. When Python does a division sum it *always* gives the answer as a decimal number, not a whole number.
 
 You can do some things with integers that you can't do with decimal numbers, and vice versa.
 
