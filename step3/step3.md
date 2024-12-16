@@ -268,7 +268,7 @@ But if you run your code you will see there's something else you also need to ch
 This is quite a tricky problem - so think about it this way. The turtle starts drawing its shape facing to the right, and at the end of the shape it's facing to the right again. This means it's made a complete 360° turn while it draws the shape.
 <p></p>
 We see in the case of the square it made this 360°
-turn in four equal steps, so each step was a quarter of 360°, which is 90°. For our five-sided figure we need to make this turn in *five* equal steps. You could easily work out the required angle with a calculator, but that would be a waste of effort. Why? Because Python is really good at doing calculations, so we should get Python to work out the angle. Like this:
+turn in four equal steps, so each step was a quarter of 360°, which is 90°. For our five-sided figure we need to make this turn in <i>five</i> equal steps. You could easily work out the required angle with a calculator, but that would be a waste of effort. Why? Because Python is really good at doing calculations, so we should get Python to work out the angle. Like this:
 <p></p>
 
 ``` python
