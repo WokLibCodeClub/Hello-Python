@@ -1,6 +1,6 @@
 # Python Graphics
 
-Now we can start to get Python drawing things on the screen.
+Now we can start to get Python drawing on the screen.
 
 For our first goes at doing graphics we will use a Python library called ```turtle``` which contains a lot of functions specially designed for drawing on the screen. There are sprites, a little bit like Scratch, but they are called ... ***Turtles!!***
 
@@ -24,7 +24,7 @@ s = Screen()
 
 (Don't forget the brackets after the word Screen, and be sure you use a capital S.) Our project now contains a *new* type of Python object - not a number or a text string, but a *Turtle Screen* object. If you use ```type(s)``` to investigate the type of the variable ```s``` you will find it is of type ```Screen```.
 
-We chose ```s``` as the variable name for our screen, but you can use *any* Python variable name which follows the rules.
+We chose ```s``` as the variable name for our screen, but you can use *any* Python variable name which follows the [rules](../step1/step1.md#python-variables).
 
 We can set the size of our graphics screen in *pixels*. In the code below we specify a size of 400 pixels across, and 400 pixels from top to bottom.
 
