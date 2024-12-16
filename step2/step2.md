@@ -77,7 +77,7 @@ Calculating someone's age is a simple subtraction sum. Add this line of code to 
 age = this_year - born
 ```
 
-(If you didn't call your variable ```born``` then use your variable name instead.)
+(If you didn't call your variable ```born``` then use *your* variable name instead.)
 
 This line calculates the person's age and puts the answer in a variable called ```age```, but our code won't *tell us* the answer unless we *print* it. So add another line
 
