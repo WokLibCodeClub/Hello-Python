@@ -113,13 +113,13 @@ The error happens in the subtraction sum because we are trying to subtract a tex
 
 ### Conversion of an object from one type to another
 
-Luckily there are functions which convert the type of a Python object, so to run our code we need to *convert* our "year born" variable from type ```'str'``` to object type integer. We can do this using the ```int()``` function. Put this line of code after the line with ```type()```:
+Luckily there are functions which convert the type of a Python object, so to run our code we need to *convert* our "year born" variable from type ```'str'``` to type integer. We can do this using the ```int()``` function. Put this line of code after the line with ```type()```:
 
 ``` python
 born = int(born)
 ```
 
-This takes the variable born, converts it to integer type and sets the label ```born``` to point to the integer.
+This takes the variable ```born```, converts it from string type to integer type and sets the label ```born``` to point to the converted integer.
 
 Repeat the line with the ```type()``` function after this conversion, and when you run the code you will see
 
