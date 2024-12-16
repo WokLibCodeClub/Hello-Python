@@ -265,11 +265,10 @@ But if you run your code you will see there's something else you also need to ch
 
 <details><summary>Hint</summary>
 <br>
-This is quite a tricky problem - so think about it this way. The turtle starts its shape facing to the right, and at the end of the shape it's facing to the right again. This means it's made a complete 360°
-turn while it draws the shape.
+This is quite a tricky problem - so think about it this way. The turtle starts drawing its shape facing to the right, and at the end of the shape it's facing to the right again. This means it's made a complete 360° turn while it draws the shape.
 <p></p>
 We see in the case of the square it made this 360°
-turn in four equal steps, so each step was a quarter of 360°, which is 90°. For our five-sided figure we need to make this turn in five equal steps. You could easily work out the required angle with a calculator, but that would be a waste of effort. Why? Because Python is really good at doing calculations, so we can easily get Python to work out the angle. Like this:
+turn in four equal steps, so each step was a quarter of 360°, which is 90°. For our five-sided figure we need to make this turn in *five* equal steps. You could easily work out the required angle with a calculator, but that would be a waste of effort. Why? Because Python is really good at doing calculations, so we should get Python to work out the angle. Like this:
 <p></p>
 
 ``` python
@@ -289,13 +288,13 @@ size = 100
 
 Now we need to go to the two places in our ```while``` loop where we had the number 5, and change this to the variable name ```num_sides```.
 
-Now, if we want to change the number of sides, we just change the variable ```num_sides``` and Python does all the rest of the calculating.
+Now, if we want to change the number of sides, we just change the variable ```num_sides``` in one place, and Python does all the rest of the calculating.
 
 But you might notice if you make the number of sides larger than 6 the turtle goes off the edges of the screen as it draws.
 
 There are two ways to fix this.
 
-The first way is to move the turtle's starting position. When you make a new turtle it is always situated at position x = 0, y = 0, which is in the middle of the screen. One of the really important turtle functions moves the turtle to a different position:
+The first way is to move the turtle's starting position. When you make a new turtle it is always situated at position x = 0, y = 0, which is in the middle of the screen. One of the really important turtle functions moves the turtle to a different x, y position:
 
 ``` python
 t.goto(50, -100)
