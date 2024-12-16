@@ -143,7 +143,7 @@ birthday = input('Have you had a birthday yet this year (y or n)?')
 
 It's always a good idea in a question like this to tell the user what sort of answer you are expecting - so the prompt string here ends with "(y or n)" to tell the user to type "y" or "n", instead of the words "yes" or "no".
 
-So the user has answered "y" or "n" to the question, and this answer has been set to the variable ```birthday```. We can now tell the computer to do one calculation ***if*** the user answered "y", and a different calculation ***if*** the user answered "n", and for this we need to use the Python ```if``` block.
+Let's assume the user has answered "y" or "n" to the question, and that this answer has been set to the variable ```birthday```. We can now tell the computer to do one calculation ***if*** the user answered "y", and a different calculation ***if*** the user answered "n"; for this we need to use the Python ```if``` block.
 
 ## The Python ```if``` block
 
@@ -165,7 +165,7 @@ Here is a simple bit of Python code which is clearly True. Type this into the co
 5 > 3
 ```
 
-and press Return. The console shows ```True``` which simply tells you that the statement "5 is greater than 3" is true .
+and press Return. The console shows ```True``` which simply tells you that the statement "5 is greater than 3" is true.
 
 If you type in ```5 < 3``` and press Return it will tell you this is ```False```, because 5 is *not* less than 3, so "5 is less than 3" is a false statement.
 
