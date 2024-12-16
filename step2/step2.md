@@ -79,7 +79,7 @@ age = this_year - born
 
 (If you didn't call your variable ```born``` then use *your* variable name instead.)
 
-This line calculates the person's age and puts the answer in a variable called ```age```, but our code won't *tell us* the answer unless we *print* it. So add another line
+This line of code calculates the person's age and puts the answer in a variable called ```age```, but our code won't *tell us* the answer unless we *print* it. So add another line
 
 ``` python
 print('You are', age)
@@ -93,7 +93,7 @@ Click Run and see what happens. Oh no - there's an error. You can seen that the 
 
 We've run into a problem concerned with the way the ```input()``` function works.
 
-In step 1 we mentioned that numbers and text strings are two different types of Python *object*. It is a feature of the ```input()``` function that whatever you type as your response, *even if it's a number*, the ```input()``` function treats it as a text string. This means that our variable ```born``` (or whatever name you used) will be a *text* type of object, even though the person typed in a number.
+In step 1 we mentioned that numbers and text strings are two different types of Python *object*. It is a feature of the ```input()``` function that whatever you type as your response, *even if it's a number*, the ```input()``` function turns what you typed into a text string. This means that our variable ```born``` (or whatever name you used) will be a *text* type of object, even though the person typed in a number.
 
 You can check this using another Python function called ```type()```, which simply tells you the type of whatever object you put inside the brackets.
 
