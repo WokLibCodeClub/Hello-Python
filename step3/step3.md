@@ -70,9 +70,9 @@ If you click Run you will now see your turtle!
 
 ![Turtle on screen](turtle2.png)
 
-Other shapes you can try for your turtle are ```'arrow', 'circle', 'square', 'triangle', 'classic'```. Don't forget: you need to put quotes around these shapes.
+Other shapes you can try for your turtle are ```'arrow', 'circle', 'square', 'triangle', 'classic'```. Don't forget: you need to put quotes around these shape names.
 
-You can also change the colour of your turtle. (Again, look out for using the American spelling color.)
+You can also change the colour of your turtle. (Again, make sure you use the American spelling color.)
 
 ``` python
 t.color('green')
@@ -112,11 +112,11 @@ size = 100
 
 Now change all your lines which say ```t.forward(100)``` to say ```t.forward(size)```. Now if you want to change the size of your square you only need to make *one* change: in the line where you set the value of the variable.
 
-### More about lines
+### More about drawing lines
 
 Sometimes you don't want the turtle to draw a line behind it. The commands to control this are almost exactly the same as Scratch:
 
-```t.penup()``` will stop the turtle drawing a line, and ```t.pendown()``` will start it drawing again.
+```t.penup()``` will stop the turtle ```t``` drawing a line, and ```t.pendown()``` will start it drawing again.
 
 You can also change the thickness of the line:
 
@@ -149,7 +149,7 @@ t.end_fill()
 
 ![Filled square](turtle3.png)
 
-### Speeing things up
+### Speeding things up
 
 Maybe the turtle moves a little bit too slowly for you. There is a way you can adjust the speed, using the command:
 
@@ -157,7 +157,7 @@ Maybe the turtle moves a little bit too slowly for you. There is a way you can a
 t.speed(8)
 ```
 
-You can adjust the number in the brackets - 1 is very slow, 10 is very fast, but, in fact, the fastest speed is when you set the speed to 0.
+You can adjust the number in the brackets: 1 is very slow, 10 is very fast, but, in fact, the fastest speed is when you set the speed to 0.
 
 ## First Python "repeat" loop
 
@@ -172,7 +172,7 @@ t.left(90)
 
 four times in a row.)
 
-The way to avoid repetition is to put the bits of code that are repeated inside a *repeat loop*. You might already have used one of the Repeat blocks in Scratch which uses the same idea.
+The way to avoid repetition is to put the bits of code that are repeated inside a *repeat loop*. You might already have used one of the Repeat blocks in Scratch, which uses the same idea.
 
 In Python there are two types of repeat loop, one begins with the word ```for``` and the other with the word ```while```. We'll do the ```while``` loop here, and cover the ```for``` loop in step 4.
 
@@ -182,7 +182,7 @@ Here's how it works: Python looks at the ```while``` line, and checks if the sta
 
 There's one further thing we need to make a ```while``` repeat loop - we need a variable, which we use to count how many times we run the loop.
 
-Add this line of code after the ```begin_fil()``` line:
+Add this line of code after the ```begin_fill()``` line:
 
 ``` python
 counter = 0
@@ -196,8 +196,7 @@ Then as the next line add:
 while counter < 4:
 ```
 
-Here, our true-or-false statement is ```counter < 4```
-and since we just set counter to 0 this statement will obviously be true.
+Here, our true-or-false statement is ```counter < 4``` and since we just set ```counter``` to 0 this statement will obviously be true.
 
 Now, take the next two lines of code and *indent* them - you can do this by placing the cursor at the beginning of the line and pressing the TAB key once. These are the lines which will be repeated.
 
@@ -214,13 +213,13 @@ t.end_fill()
 
 Run the code and see what happens.
 
-It looks as if our turtle is going to go round for ever  - in fact it will. We have accidentally created a Python *forever* loop, because we have used ```while``` with a statement which is *always true*. You can make a Python forever loop this way using any statement which is always true: eg ```5 < 7```; ```'black' != 'white'``` but the normal way is to use the word ```True```. So a Python forever loop would normally begin:
+It looks as if our turtle is going to go round for ever  - in fact, it will. We have accidentally created a Python *forever* loop, because we have used ```while``` with a statement which is *always true*. You can make a Python forever loop this way using any statement which is always true: eg ```5 < 7```; ```'black' != 'white'``` but the normal way is to use the word ```True```. So a Python forever loop would normally begin:
 
 ``` python
 while True:
 ```
 
-But we don't want a Python forever loop, we want one which will run four times, then stop. The way to do this is to add an extra line inside the loop which increases the counter by 1, each time we run the loop.
+But we **don't want** a Python forever loop, we want one which will run four times, then stop. The way to do this is to add an extra line of code inside the loop which increases the counter by 1, each time we run the loop.
 
 One way to increase the value of a variable by one is to use this code:
 
@@ -230,7 +229,7 @@ counter = counter + 1
 
 If this was a maths sum it would look like complete nonsense, but in Python the equals sign isn't used to indicate two things are equal, it's used to set the value of a variable.
 
-In this code Python starts at the right hand side, looks at the value of variable *counter* and adds one to it; then the equals sign has the effect of taking this new increased number and setting (updating, really) the counter variable equal to it.
+In this code Python starts at the right hand side, looks at the value of variable *counter* and adds one to it; then the equals sign has the effect of taking this new increased number and setting (updating, really) the ```counter``` variable equal to it.
 
 Actually, increasing the value of a variable by 1 is something we need to do *so often* that we have a little shortcut for it. So the quick way to increase variable *counter* by 1 is to use the code:
 
@@ -240,8 +239,13 @@ counter += 1
 
 Add this line as the last line *inside* the ```while``` loop (underneath ```t.left(90)```) - which means it has to be indented, and now run the code again. You should find the turtle goes once round the square and stops.
 
-It's worth thinking through how the loop is operating, step by step: we set counter to 0, then go to the while loop - Python looks at ```counter < 4```
-and decides this is true, so runs the loop. Inside the loop we increase counter by 1, so it's now set to 1. Python goes back to the while line, looks at ```counter < 4``` and decides this is still true, so runs the loop again. Inside the loop we increase counter by 1, so it's now set to 2 etc etc. Once we've run the loop four times we finally set counter to 4. Python goes back to the ```while``` line, looks at ```counter < 4``` but now decides this is not true (because counter equals 4, so it's no longer less than 4), so the loop stops, and Python goes on to the rest of the code.
+It's worth thinking through how the loop is operating, step by step: we set ```counter``` to 0, then go to the while loop - Python looks at
+
+``` python
+counter < 4
+```
+
+and decides this is true, so runs the loop. Inside the loop we increase ```counter``` by 1, so it's now set to 1. Python goes back to the while line, looks at ```counter < 4``` and decides this is still true, so runs the loop again. Inside the loop we increase ```counter``` by 1, so it's now set to 2 etc etc. Once we've run the loop four times we finally set ```counter``` to 4. Python goes back to the ```while``` line, looks at ```counter < 4``` but now decides this is not true (because ```counter``` equals 4, so it's no longer less than 4), so the loop stops, and Python goes on to the rest of the code.
 
 ## A shape of many sides
 
