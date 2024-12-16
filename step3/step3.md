@@ -29,10 +29,11 @@ We chose ```s``` as the variable name for our screen, but you can use *any* Pyth
 We can set the size of our graphics screen in *pixels*. In the code below we specify a size of 400 pixels across, and 400 pixels from top to bottom.
 
 We can also specify the background colour of our screen - here we have used *lightblue*. But notice that the line of code which sets the colour needs to use the American spelling *color*.
+(The second line of code below includes a Python *comment*, so you can see how we use these to add extra information into our code.)
 
 ``` python
 s.setup(400,400)
-s.bgcolor('lightblue') # short for background color
+s.bgcolor('lightblue') # bgcolor is short for background color
 ```
 
 Click on **Run** and you should see a light blue square shape in the place where you normally see printed results.
