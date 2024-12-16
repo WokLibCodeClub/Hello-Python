@@ -206,7 +206,7 @@ if birthday == "y":
 
 ```
 
-When you press Return after typing this you will notice that the cursor has jumped a couple of spaces to the right from the beginning of the line - so the next code you type will be ***indented***. Indented lines are incredibly important in Python and act like the white spaces in the Scratch if block to show exactly which bit of code will run for which case.
+When you press Return after typing this you will notice that the cursor has jumped a couple of spaces to the right from the beginning of the line - so the next code you type will be ***indented***. Indented lines are incredibly important in Python and act like the white spaces in the Scratch *if* block to show exactly which bit of code will run for which situation.
 
 We know if the person has had a birthday this year and they answered "y", the variable ```birthday``` will be set to "y", so when we make the statement ```birthday == "y"``` this will be ```True```. In this case we can use the calculation we did earlier and it will give the right answer. So in the next line we want to put the code
 
