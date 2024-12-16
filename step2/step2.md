@@ -131,9 +131,9 @@ In case you wondered, there's another function ```str()``` which converts a numb
 
 ## Does the code always give the right answer?
 
-The last number printed at the end of the Results panel is the computer's calculation of the person's age. But *sometimes it gives the wrong answer!* This happens if the person hasn't yet had a birthday this year, which means the computer calculates an age which is one too large.
+The last number Python printed at the end of the Results panel is the computer's calculation of the person's age. But *sometimes it gives the wrong answer!* This happens if the person hasn't yet had a birthday this year, which means the computer calculates an age which is one too large.
 
-To make sure the computer always calculates the correct answer we need to check if the person has had a birthday this year or not. Then we will be able to do a different calculation, depending on the answer.
+To make sure the computer always calculates the correct answer we need to check if the person has had a birthday this year or not, so we can do a different calculation, depending on the answer.
 
 We need to use another ```input()``` function, with another variable, to ask if the person has had a birthday this year. Add this code *just before* the line which calculates the persons age (```age =``` etc). Here is one way to do it, using a variable called ```birthday```:
 
