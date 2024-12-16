@@ -249,7 +249,7 @@ and decides this is true, so runs the loop. Inside the loop we increase ```count
 
 ## A shape of many sides
 
-Squares are nice, but could we change our code to get our turtle to draw a five-sided figure?
+Squares are nice, but how could we change our code to get our turtle to draw a five-sided figure?
 
 One obvious change is to make our loop repeat 5 times instead of 4. What would you change to make this happen?
 
