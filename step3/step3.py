@@ -4,7 +4,7 @@ from turtle import *
 
 s = Screen()
 s.setup(400,400)
-s.bgcolor('lightblue')
+s.bgcolor('lightblue') # bgcolor is short for background color
 
 t = Turtle()
 t.shape('turtle')
