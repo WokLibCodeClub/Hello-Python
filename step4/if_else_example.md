@@ -81,7 +81,7 @@ else:
 
 If reading was, say, 95 it would pass the first test (> 50, so colour set to yellow) then immediately pass the second test (> 70, so colour immediately reset to orange) then finally it would also pass the third test, > 90, so colour would finally be set to red - which is what we want.
 
-But although the code now works it's clear that Python is doing a lot of unnecessary testing 
+But although the code now works it's clear that Python is doing a lot of unnecessary testing here. That's why the ```elif``` option is a more efficient way of coding for this example.
 
 -----
 
