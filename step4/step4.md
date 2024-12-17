@@ -56,6 +56,8 @@ The words ```if``` and ```else``` we have already used in the *Age Calculator* c
 
 ```elif``` is short for 'else if' and it's a way of testing more than one statement inside a Python ```if``` block. If you work through this code you will see that it is testing for all the possible values of the random number. If it's a 1 (the line beginning ```if```) then we will select the house 'Hufflepuff', but if it's not a 1 it could still be 2, 3 or 4. The next line, beginning with ```elif```, now tests to see if it's a 2, in which case the house will be 'Slytherin'. But the random number could still be 3 or 4, so we need to do yet another test. First we test if it's a 3, with another ```elif``` line, which will make the house 'Gryffindor'. Finally, if the random number is not 1, 2 or 3, then it *must* be 4, so we don't need to test it - we just say ```else```, which means all the other tests have failed, in which case the house is 'Ravenclaw'.
 
+A key feature of these multiple test ```if``` blocks is that as soon as Python finds one of the tests which is ```True``` it carries out the code for that test and skips the rest of the tests. In some circumstances this can save a lot of time.
+
 In a Python ```if``` block the first line has to start with ```if```. If you have an ```else:``` line it has to go at the end (but you don't have to have one). In between, you can put as many ```elif``` blocks as you need.
 
 ## Lists in Python
@@ -109,3 +111,11 @@ Now we've made a list we have opened the possibility of using a whole lot of spe
 ## The very useful ```range()``` function
 
 ## A turtle game with our own function
+
+-----
+
+- That's the end of our short introduction to Python. I hope you enjoyed it.
+
+- Back to [previous step](../step3/step3.md).
+
+- Back to [front page](../README.md)
