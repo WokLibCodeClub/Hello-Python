@@ -198,6 +198,16 @@ The first line of a ```for``` loop has *five* parts:
 4. a list, or a label pointing to a list
 5. a colon ```:```
 
+To demonstrate this we will go to the end of the Sorting Hat programme. Type this code at the end:
+
+``` python
+for h in ['Gryffindor', 'Hufflepuff', 'Ravenclaw', 'Slytherin']:
+  print(h)
+
+print('Finished')
+```
+
+Here we have a loop variable ```h```. Python starts the loop by setting the loop variable to the *first* item in the list.
 
 ## The very useful ```range()``` function
 
