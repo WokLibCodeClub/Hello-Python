@@ -221,6 +221,12 @@ while True:
 
 But we **don't want** a Python forever loop, we want one which will run four times, then stop. The way to do this is to add an extra line of code inside the loop which increases the counter by 1, each time we run the loop.
 
+If you changed the ```while``` line in your code then make sure you change it back to
+
+``` python
+while counter < 4:
+```
+
 One way to increase the value of a variable by one is to use this code:
 
 ``` python
