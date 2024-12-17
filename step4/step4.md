@@ -108,6 +108,52 @@ As you can see this produces an error - an "Index" error. This is a very common 
 
 Now we've made a list we have opened the possibility of using a whole lot of special *list* functions in Python.
 
+We can add an item to the list. Let's say Hogwarts is getting full and needs another house. We can add a house called 'Wokies' like this:
+
+``` python
+houses.append('Wokies')
+```
+
+In the console if you just type ```houses``` it will print the list for you (without having to use the ```print()``` function). You will see the extra item.
+
+We can also remove an item from the list. Type:
+
+``` python
+houses.remove('Slytherin')
+```
+
+Type ```houses``` again and you will now see that 'Slytherin' is no longer in the list.
+
+----
+
+### Using the arrow keys in the console
+
+The UP and DOWN arrows are really useful when you are using the console, as they allow you to reuse previous commands without having to retype them. If you hit the UP arrow once it will repeat the last command you used; if you hit it again it will repeat the command before that, and so on.
+
+----
+
+If we type
+
+``` python
+houses.sort()
+```
+
+then hit the UP arrow a couple of times to get the command ```houses``` again you will see the list has now been sorted into alphabetical order.
+
+Sometimes we make an empty list in Python, then add items to it in the code. This will make an empty list
+
+``` python
+newlist = []
+```
+
+and put attach it to a variable ```newlist```. We can use the ```append()``` function to add some items into the list. If we need Python to count how many items there are in the list we can use a function ```len()```, short for length. Try this with the ```houses``` list:
+
+``` python
+len(houses)
+```
+
+and it will probably print 4, if that's the number of items in that list.
+
 ### A much simpler Sorting Hat programme
 
 To make the really simple Sorting Hat programme we first need to import another function from the ```random``` library, so we will make a change to the ```import``` line at the beginning of the code. If you want to import more than one named function from a library you don't need a separate line for each function, you can just make a list of the functions you want, with a comma between each. So change this line to read:
@@ -140,6 +186,18 @@ print(choice(houses))
 Using a list has made the code much shorter.
 
 ## The Python ```for``` loop
+
+As we've seen, lists can be very useful for simplifying code, but one of the most common uses for a list is in the type of repeat loop which begins with the word ```for```.
+
+It's similar to a ```while``` loop: you have a first line which ends in a colon, then all the lines which you want repeated are indented.
+The first line of a ```for``` loop has *five* parts:
+
+1. the word ```for```
+2. the name of a *variable* to be used in the loop
+3. the word ```in```
+4. a list, or a label pointing to a list
+5. a colon ```:```
+
 
 ## The very useful ```range()``` function
 
