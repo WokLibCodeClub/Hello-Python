@@ -48,7 +48,7 @@ To test this code change the value of variable ```reading``` and run the code lo
 
 In fact, this code isn't working at all well - any value of reading above 50 makes the colour yellow, and we never see the orange and red colours at all.
 
-What's happening is that if the reading is above 90 then the first ```if``` test is ```True```, so the colour changes to red, but immediately afterwards Python does the second test. If the reading is above 90 then it must also be above 70, so, before you can see it, the colour changes to orange. Then Python does the third test - and if the reading is above 90 it's also above 50, so the colour changes to yellow, which is the colour we see.
+What's happening is that if the reading is above 90 then the first ```if``` test is ```True```, so the colour changes to red, but immediately afterwards Python does the second test. If the reading is above 90 then it must also be above 70, so, before you can see it, the colour changes to orange. Then Python does the third test - and if the reading is above 90 it's also above 50, so the colour changes instantly to yellow, which is the colour we see.
 
 There are two ways to fix this.
 
