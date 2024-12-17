@@ -56,13 +56,15 @@ There are two ways to fix this.
 
 If we combine all these ```if``` blocks into one multiple block using ```elif``` we can take advantage of the way Python carries out multiple tests, especially the fact that as soon as it finds a test which is ```True``` it immediately skips all the other tests.
 
-Change the second and third ```if``` to ```elif``` and try the code again. You should now find the turtle always shows the correct colour as you vary the value of ```reading```. So, if the reading is, say, 99, the first test gives ```True```, so the colour is set to red, and Python immediately skips all the other tests.
+Change the second and third ```if``` to ```elif``` and try the code again. You should now find the turtle always shows the correct colour as you vary the value of ```reading```.
+
+So, if the reading is, say, 99, the first test gives ```True```, so the colour is set to red, and Python immediately skips all the other tests, leaving the red colour showing.
 
 If the reading is 75 the first test gives ```False```, so Python goes on to the second test - this one gives ```True``` so the colour is set to orange, and Python skips the remaining tests, so the colour stays orange.
 
 ## 2. Changing the order of the tests
 
-Using ```elif``` is definitely the best way of fixing the problem, but you can do it using just ```if``` blocks by changing the order of doing the tests.
+Using ```elif``` is definitely the best way of fixing the problem, but you *can* do it using just ```if``` blocks by changing the order of doing the tests.
 
 In this example the way to do this is to test for the lowest value first and then work upwards:
 
@@ -79,7 +81,7 @@ else:
     t.color('lime green')
 ```
 
-If reading was, say, 95 it would pass the first test (> 50, so colour set to yellow) then immediately pass the second test (> 70, so colour immediately reset to orange) then finally it would also pass the third test, > 90, so colour would finally be set to red - which is what we want.
+If reading was, say, 95 the first test would give ```True``` (reading > 50, so colour would be set to yellow) then immediately move to the second test which would also give ```True``` (reading > 70, so the colour is immediately reset to orange) then finally it would also give ```True``` for the third test, because reading > 90, so colour would finally be set to red - which is what we want.
 
 But although the code now works it's clear that Python is doing a lot of unnecessary testing here. That's why the ```elif``` option is a more efficient way of coding for this example.
 
