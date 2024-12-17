@@ -25,3 +25,8 @@ t.shape('big square')
 reading = 42
 ```
 
+-----
+
+- Back to [Sorting Hat code](../step4/step4.md#sorting-hat).
+
+- Back to [front page](../README.md)
