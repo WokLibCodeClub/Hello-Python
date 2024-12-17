@@ -60,7 +60,7 @@ A key feature of these multiple test ```if``` blocks is that as soon as Python f
 
 In a Python ```if``` block the first line has to start with ```if```. If you have an ```else:``` line it has to go at the end (but you don't have to have one). In between, you can put as many ```elif``` blocks as you need.
 
-We have made an example project to show a slightly more complicated multiple test ```if``` block, where the code will *only* work if you use ```elif``` lines, and where the order of the tests is very important. You can find it [here](if_else_example.md).
+We have made an example project to show a slightly more complicated multiple test ```if``` block, where the order of the tests is critical. You can find it [here](if_else_example.md).
 
 ## Lists in Python
 
@@ -110,7 +110,34 @@ Now we've made a list we have opened the possibility of using a whole lot of spe
 
 ### A much simpler Sorting Hat programme
 
+To make the really simple Sorting Hat programme we first need to import another function from the ```random``` library, so we will make a change to the ```import``` line at the beginning of the code. If you want to import more than one named function from a library you don't need a separate line for each function, you can just make a list of the functions you want, with a comma between each. So change this line to read:
 
+``` python
+from random import randint, choice
+```
+
+so we can use the ```choice``` function. This function acts with a list and simply selects an item at random from the list.
+
+So we no longer need a random number for our code; and we no longer need any of the ```if``` block. The whole code looks like this:
+
+``` python
+#!/bin/python3
+
+from random import randint, choice
+
+houses = ['Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw']
+
+house = choice(houses)
+print(house)
+```
+
+In fact we can make the code even shorter by combining the last two lines, by putting the ```choice()``` function *inside* the print function:
+
+``` python
+print(choice(houses))
+```
+
+Using a list has made the code much shorter.
 
 ## The Python ```for``` loop
 
