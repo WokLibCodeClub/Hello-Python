@@ -207,9 +207,25 @@ for h in ['Gryffindor', 'Hufflepuff', 'Ravenclaw', 'Slytherin']:
 print('Finished')
 ```
 
-Here we have a loop variable ```h```. Python starts the loop by setting the loop variable to the *first* item in the list.
+Run the code to see what happens.
+
+Here we have a loop variable ```h```. Python starts the loop by setting the loop variable to the *first* item in the list. It then carries out the indented lines of code - here we only have one line, which is to print the variable ```h```. So Python prints 'Gryffindor'.
+
+Python then goes back to the top of the loop and sets variable ```h``` to the *second* item in the list, and carries out the indented lines - so this time it prints 'Hufflepuff'. In fact Python keeps going back to the top of the loop until it runs out of items in the list. When that happens it ends the loop and goes on to the rest of the code - in the example here it will now print 'Finished'.
+
+That's how a ```for``` loop works.
+
+Sometimes we simply want code to repeat a set number of times. So if we want a bit of code to repeat 10 times we just use a ```for``` loop with any list which has 10 items in it. Lists can have numbers as well as text strings, so one ```for``` loop which repeats 10 times might begin:
+
+``` python
+for n in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+```
+
+For a 'repeat 10 times' loop this is not too much typing, but what if you wanted a 'repeat 100 times' or 'repeat 1000 times' loop? Would you have to type out a list with 1000 items in it?
 
 ## The very useful ```range()``` function
+
+Luckily Python gives us a function called ```range()``` which automatically generates lists of numbers. We can explore the very useful ```range()``` function in the Inter
 
 ## A turtle game with our own function
 
