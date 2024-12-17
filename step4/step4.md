@@ -225,11 +225,11 @@ For a 'repeat 10 times' loop this is not too much typing, but what if you wanted
 
 ## The very useful ```range()``` function
 
-Luckily Python gives us a function called ```range()``` which automatically generates lists of numbers. We can explore the very useful ```range()``` function in the Inter
+Luckily Python gives us a function called ```range()``` which automatically generates lists of numbers. We can explore the very useful ```range()``` function in the [Interactive Python Console](https://trinket.io/console).
 
-## A turtle game with our own function
+## A times table tester programme
 
------
+----
 
 - That's the end of our short introduction to Python. I hope you enjoyed it.
 
