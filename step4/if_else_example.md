@@ -48,21 +48,21 @@ To test this code change the value of variable ```reading``` and run the code lo
 
 In fact, this code isn't working at all well - any value of reading above 50 makes the colour yellow, and we never see the orange and red colours at all.
 
-What's happening is that if the reading is above 90 then the first ```if``` test is ```True```, so the colour changes to red, but immediately afterwards Python does the second test. If the reading is above 90 then it must also be above 70, so before you can see it the colour changes to orange. Then Python does the third test - and if the reading is above 90 it's also above 50, so the colour changes to yellow, which is the colour we see.
+What's happening is that if the reading is above 90 then the first ```if``` test is ```True```, so the colour changes to red, but immediately afterwards Python does the second test. If the reading is above 90 then it must also be above 70, so, before you can see it, the colour changes to orange. Then Python does the third test - and if the reading is above 90 it's also above 50, so the colour changes to yellow, which is the colour we see.
 
 There are two ways to fix this.
 
-## Using ```elif```
+## 1. Using ```elif```
 
-If we combine all these ```if``` blocks into one multiple block using ```elif``` we can take advantage of the way Python carries out multiple tests, but as soon as it finds one which is ```True``` it immediately skips all the other tests.
+If we combine all these ```if``` blocks into one multiple block using ```elif``` we can take advantage of the way Python carries out multiple tests, especially the fact that as soon as it finds a test which is ```True``` it immediately skips all the other tests.
 
 Change the second and third ```if``` to ```elif``` and try the code again. You should now find the turtle always shows the correct colour as you vary the value of ```reading```. So, if the reading is, say, 99, the first test gives ```True```, so the colour is set to red, and Python immediately skips all the other tests.
 
 If the reading is 75 the first test gives ```False```, so Python goes on to the second test - this one gives ```True``` so the colour is set to orange, and Python skips the remaining tests, so the colour stays orange.
 
-## Changing the order of the tests
+## 2. Changing the order of the tests
 
-Using ```elif``` is definitely the best way of fixing the problem, but you can to it using just ```if``` blocks by changing the order of doing the tests.
+Using ```elif``` is definitely the best way of fixing the problem, but you can do it using just ```if``` blocks by changing the order of doing the tests.
 
 In this example the way to do this is to test for the lowest value first and then work upwards:
 
