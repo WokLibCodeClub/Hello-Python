@@ -60,6 +60,8 @@ A key feature of these multiple test ```if``` blocks is that as soon as Python f
 
 In a Python ```if``` block the first line has to start with ```if```. If you have an ```else:``` line it has to go at the end (but you don't have to have one). In between, you can put as many ```elif``` blocks as you need.
 
+We have made an example project to show a slightly more complicated multiple test ```if``` block, where the code will *only* work if you use ```elif``` lines, and where the order of the tests is very important. You can find it [here](if_else_example.md).
+
 ## Lists in Python
 
 Well that's the rather clumsy version of the Sorting House code. But we can make it much simpler using a Python *list*. Move the the browser tab with the [Interactive Python Console](https://trinket.io/console).
@@ -105,6 +107,10 @@ As you can see this produces an error - an "Index" error. This is a very common 
 ### Things you can do with lists
 
 Now we've made a list we have opened the possibility of using a whole lot of special *list* functions in Python.
+
+### A much simpler Sorting Hat programme
+
+
 
 ## The Python ```for``` loop
 
