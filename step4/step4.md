@@ -146,7 +146,7 @@ Sometimes we make an empty list in Python, then add items to it in the code. Thi
 newlist = []
 ```
 
-and put attach it to a variable ```newlist```. We can use the ```append()``` function to add some items into the list. If we need Python to count how many items there are in the list we can use a function ```len()```, short for length. Try this with the ```houses``` list:
+and attach it to a variable ```newlist```. We can use the ```append()``` function to add some items into the list. If we need Python to count how many items there are in the list we can use a function ```len()```, short for length. Try this with the ```houses``` list:
 
 ``` python
 len(houses)
@@ -195,7 +195,7 @@ The first line of a ```for``` loop has *five* parts:
 1. the word ```for```
 2. the name of a *variable* to be used in the loop
 3. the word ```in```
-4. a list, or a label pointing to a list
+4. a list, or a variable name pointing to a list
 5. a colon ```:```
 
 To demonstrate this we will go to the end of the Sorting Hat programme. Type this code at the end:
