@@ -209,7 +209,7 @@ print('Finished')
 
 Run the code to see what happens.
 
-Here we have a loop variable ```h```. Python starts the loop by setting the loop variable to the *first* item in the list. It then carries out the indented lines of code - here we only have one line, which is to print the variable ```h```. So Python prints 'Gryffindor'.
+Here we have a loop variable ```h``` (this can have *any* name as long as it's within the rules). Python starts the loop by setting the loop variable to the *first* item in the list. It then carries out the indented lines of code - here we only have one line, which is to print the variable ```h```. So Python prints 'Gryffindor'.
 
 Python then goes back to the top of the loop and sets variable ```h``` to the *second* item in the list, and carries out the indented lines - so this time it prints 'Hufflepuff'. In fact Python keeps going back to the top of the loop until it runs out of items in the list. When that happens it ends the loop and goes on to the rest of the code - in the example here it will now print 'Finished'.
 
@@ -221,13 +221,54 @@ Sometimes we simply want code to repeat a set number of times. So if we want a b
 for n in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
 ```
 
+Here we have used ```n``` as the loop variable, but, again, any variable with a valid name could be used.
+
 For a 'repeat 10 times' loop this is not too much typing, but what if you wanted a 'repeat 100 times' or 'repeat 1000 times' loop? Would you have to type out a list with 1000 items in it?
 
 ## The very useful ```range()``` function
 
 Luckily Python gives us a function called ```range()``` which automatically generates lists of numbers. We can explore the very useful ```range()``` function in the [Interactive Python Console](https://trinket.io/console).
 
-## A times table tester programme
+In the console type ```range(6)``` and press Return. Now try it again with a different number inside the brackets. After two or three goes you will get to understand that the range function generates a list of whole numbers, and you will be able to predict what numbers your list will contain.
+
+<details><summary>Hint</summary>
+
+<p></p>
+
+```range()``` with one number in the brackets produces a list of numbers starting with 0 and increasing by 1 until <i>one less than</i> the number in the brackets.
+
+</details>
+
+You can see that whatever number you put in the brackets that is the number of items you have in your list. So if you want a Python repeat 10 times loop you can start it with the code:
+
+``` python
+for n in range(10):
+```
+
+The function ```range(10)``` generates a list with 10 numbers in it, so the loop will repeat 10 times.
+
+### ```range()``` with two numbers in the brackets
+
+But ```range()``` can do more than that.
+
+In the Interactive Python Console type ```range()``` but this time put two numbers inside the brackets. If this produces an empty list ```[]``` try swapping the order of the two numbers. See if you can work out what the two numbers do.
+
+<details><summary>Hint</summary>
+<br>
+The first number sets the starting 
+<p></p>
+Here is the line of code you need:
+<p></p>
+
+``` python
+from random import randint
+```
+  
+</details>
+
+
+
+## A times table revision project
 
 ----
 
