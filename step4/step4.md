@@ -134,13 +134,13 @@ The UP and DOWN arrows are really useful when you are using the console, as they
 
 ----
 
-Sometimes we want to find out which item in the list has a given index number - for example ```houses[1]``` will tell us the item which has index 1. At other times we want to know the opposite: we know an item is in the list but we don't know what position it's in. For this we have another function ```index()```. So if we know the item ```'Gryffindor'``` is in the list ```houses``` we can find out what its index number is with
+Sometimes we want to find out which item in the list has a given index number - for example: ```houses[1]``` will tell us which item has the index 1. At other times we want to know the opposite: we know an item is in the list but we don't know what position it's in. For this we have another function called ```index()```. So if we know the item ```'Gryffindor'``` is in the list ```houses``` we can find out what its index number is with
 
 ``` python
 houses.index('Gryffindor')
 ```
 
-Type ```houses``` in the console, or hit the UP arrow a couple of times, then hit Return to show the whole list, and check the position of 'Gryffindor'.
+If you want to check this, type ```houses``` in the console, or hit the UP arrow a couple of times, then hit Return to show the whole list.
 
 Another list function will sort our list. If we type
 
@@ -148,15 +148,15 @@ Another list function will sort our list. If we type
 houses.sort()
 ```
 
-then hit the UP arrow a couple of times to get the command ```houses``` again you will see the list has now been sorted into alphabetical order.
+then display the list again (hit the UP arrow a couple of times to get the command ```houses``` then press Return) you will see the list has now been sorted into alphabetical order.
 
-Sometimes we make an empty list in Python, then add items to it in the code. This will make an empty list
+Sometimes we make an empty list in Python, then add items to it in the code. This code will make an empty list attached to the variable ```newlist```:
 
 ``` python
 newlist = []
 ```
 
-and attach it to a variable ```newlist```. We can use the ```append()``` function to add some items into the empty list. If we need Python to count how many items there are in the list we can use a function ```len()```, short for length. Try this with the ```houses``` list:
+If we need Python to count how many items there are in the list we can use a function ```len()```, short for length. Try this with the ```houses``` list:
 
 ``` python
 len(houses)
