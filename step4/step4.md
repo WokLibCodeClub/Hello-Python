@@ -74,6 +74,8 @@ houses = ['Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw']
 
 The first part of this code is simply making a variable, called ```houses```. To the right of the equals sign we have left and right *square brackets* ```[ ]``` and in between these we have a list of the different houses, each one separated by a comma. The square brackets indicate that we are making a *list*, so the variable ```houses``` will be of type "list".
 
+Because each of the items in the list is surrounded by quote marks we can see that this is a list of *text strings*. But you can also have lists of integer numbers, decimal numbers, turtles, in fact, just about any type of Python object. You can even have lists of lists!
+
 We can print a list using the ```print()``` function:
 
 ``` python
@@ -102,13 +104,13 @@ print(houses[4])
 
 ![Index Error](index_error.png)
 
-As you can see this produces an error - an "Index" error. This is a very common error, and almost all coders will accidentally create these at some time - it simply means you have tried to use a list with an index number which doesn't exist. Why did we cause this error? It's because although our list has four items the index numbers start at 0, so the last item in the list has index number 3, not 4. There is *no* item with an index number 4, so we get an error.
+As you can see this produces an error - an "Index" error. This is a very common error, and almost all coders will accidentally create one of these at some time - it simply means you have tried to use a list with an index number which doesn't exist. Why did we cause this error? It's because although our list has four items the index numbers start at 0, so the last item in the list has index number 3, not 4. There is *no* item with an index number 4, so we get an error.
 
 ### Things you can do with lists
 
 Now we've made a list we have opened the possibility of using a whole lot of special *list* functions in Python.
 
-We can add an item to the list. Let's say Hogwarts is getting full and needs another house. We can add a house called 'Wokies' like this:
+We can add an item to the list. Let's say Hogwarts is getting full and needs another house. We can add a house called 'Wokies' to the list like this:
 
 ``` python
 houses.append('Wokies')
@@ -128,11 +130,19 @@ Type ```houses``` again and you will now see that 'Slytherin' is no longer in th
 
 ### Using the arrow keys in the console
 
-The UP and DOWN arrows are really useful when you are using the console, as they allow you to reuse previous commands without having to retype them. If you hit the UP arrow once it will repeat the last command you used; if you hit it again it will repeat the command before that, and so on.
+The UP and DOWN arrows are really useful when you are using the console, as they allow you to reuse previous commands without having to retype them. If you hit the UP arrow once it will get back the last command you used; if you hit UP again it will find the command you used before that, and so on. Once you've found the command you want you press Return to execute it.
 
 ----
 
-If we type
+Sometimes we want to find out which item in the list has a given index number - for example ```houses[1]``` will tell us the item which has index 1. At other times we want to know the opposite: we know an item is in the list but we don't know what position it's in. For this we have another function ```index()```. So if we know the item ```'Gryffindor'``` is in the list ```houses``` we can find out what its index number is with
+
+``` python
+houses.index('Gryffindor')
+```
+
+Type ```houses``` in the console, or hit the UP arrow a couple of times, then hit Return to show the whole list, and check the position of 'Gryffindor'.
+
+Another list function will sort our list. If we type
 
 ``` python
 houses.sort()
@@ -146,7 +156,7 @@ Sometimes we make an empty list in Python, then add items to it in the code. Thi
 newlist = []
 ```
 
-and attach it to a variable ```newlist```. We can use the ```append()``` function to add some items into the list. If we need Python to count how many items there are in the list we can use a function ```len()```, short for length. Try this with the ```houses``` list:
+and attach it to a variable ```newlist```. We can use the ```append()``` function to add some items into the empty list. If we need Python to count how many items there are in the list we can use a function ```len()```, short for length. Try this with the ```houses``` list:
 
 ``` python
 len(houses)
@@ -189,7 +199,8 @@ Using a list has made the code much shorter.
 
 As we've seen, lists can be very useful for simplifying code, but one of the most common uses for a list is in the type of repeat loop which begins with the word ```for```.
 
-It's similar to a ```while``` loop: you have a first line which ends in a colon, then all the lines which you want repeated are indented.
+It's similar to a ```while``` loop: you have a first line which ends in a colon, then all the lines which you want to repeat are indented.
+
 The first line of a ```for``` loop has *five* parts:
 
 1. the word ```for```
@@ -215,7 +226,7 @@ Python then goes back to the top of the loop and sets variable ```h``` to the *s
 
 That's how a ```for``` loop works.
 
-Sometimes we simply want code to repeat a set number of times. So if we want a bit of code to repeat 10 times we just use a ```for``` loop with any list which has 10 items in it. Lists can have numbers as well as text strings, so one ```for``` loop which repeats 10 times might begin:
+Sometimes we simply want code to repeat a set number of times. So if we want a bit of code to repeat 10 times we just set up a ```for``` loop with *any* list which has 10 items in it. Lists can have numbers as well as text strings, so one ```for``` loop which repeats 10 times might begin:
 
 ``` python
 for n in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
@@ -227,7 +238,7 @@ For a 'repeat 10 times' loop this is not too much typing, but what if you wanted
 
 ## The very useful ```range()``` function
 
-Luckily Python gives us a function called ```range()``` which automatically generates lists of numbers. We can explore the very useful ```range()``` function in the [Interactive Python Console](https://trinket.io/console).
+Luckily Python gives us a function called ```range()``` which automatically generates lists of integer numbers. We can explore the very useful ```range()``` function in the [Interactive Python Console](https://trinket.io/console).
 
 In the console type ```range(6)``` and press Return. Now try it again with a different number inside the brackets. After two or three goes you will get to understand that the range function generates a list of whole numbers, and you will be able to predict what numbers your list will contain.
 
@@ -255,16 +266,22 @@ In the Interactive Python Console type ```range()``` but this time put two numbe
 
 <details><summary>Hint</summary>
 <br>
-The first number sets the starting 
+The first number sets the starting value and the second number is <i>one more than</i> the last number you want.
 <p></p>
-Here is the line of code you need:
+If you type this:
 <p></p>
 
 ``` python
-from random import randint
+range(5,10)
 ```
-  
+
+it will give you a list which starts at 5 and goes up to 9.
+
 </details>
+
+### ```range()``` with three numbers in the brackets
+
+But ```range()``` is even more useful still. 
 
 
 
