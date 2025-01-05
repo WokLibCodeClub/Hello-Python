@@ -351,7 +351,13 @@ but rather than type this list see if you can use ```range()``` to make this lis
 
 In some ```for``` loops we only use the loop variable for counting how many times we run the loop, but in this example we actually need to use the loop variable ```n``` in making the output.
 
+We can generate the output using the ```print()``` function with several items inside the brackets, each separated by a comma. This print function will have to be *indented* and come after the ```for``` line, so it will run once for every number in the list. Each time we run the loop the loop variable ```n``` will be set to the next number in the list.
+
+Look at the output:
+
 ![Output from times table revision](times_table_output.png)
+
+Can you work out what to put inside the brackets of the ```print()``` function to print out the times table?
 
 ## Next Steps
 
