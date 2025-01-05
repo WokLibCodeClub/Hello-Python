@@ -283,9 +283,75 @@ it will give you a list which starts at 5 and goes up to 9.
 
 But ```range()``` is even more useful still. 
 
+Try typing this into the console:
 
+```
+range(1,20)
+```
+
+Now add a comma after the number 20 and add a third number (this should be a small number). Press Enter and see what list the function produces. Change the third number, and see if you can work out what it does!
+
+<details><summary>Hint</summary>
+<br>
+The first number sets the starting value and the second number is <i>one more than</i> the last number you want, and the <i>third</i> number sets the size of the steps between numbers.
+<p></p>
+If you type this:
+<p></p>
+
+``` python
+range(5,20,3)
+```
+
+it will give you a list which starts at 5 and goes up in jumps of 3, until the last number which is less than 20. In this case that is 17.
+
+</details>
 
 ## A times table revision project
+
+Is there a times table which you find slightly difficult to remember? Some people find the 7-times table a bit tricky. So we'll write a short programme to print out a times-table so we can use it for revision. Here's the sort of print out we want to get:
+
+``` python
+1 times 7 is 7
+2 times 7 is 14
+3 times 7 is 21
+4 times 7 is 28
+5 times 7 is 35
+6 times 7 is 42
+7 times 7 is 49
+8 times 7 is 56
+9 times 7 is 63
+10 times 7 is 70
+11 times 7 is 77
+12 times 7 is 784
+```
+
+Using a ```for``` loop we can create this output with just a couple of lines of code.
+
+Start a new project, following the instructions [here](../trinket_basics/using_trinket.md#starting-a-new-trinket-project) and add this code at the beginning:
+
+``` python
+#!/bin/python3
+```
+
+Give it a name to show that it's a times table programme.
+
+We want to use it for *any* times table, not just the 7-times table, so lets have a variable where we set the times table we want to print. We'll set it to 7 to start with but we can change this to get any other times table.
+
+``` python
+table = 7
+```
+
+Now we want a ```for``` loop. Look back in this page to [here](#the-python-for-loop) to see the five parts you need in the first line. Let's use ```n``` as the loop variable. Your list should include these numbers
+
+``` python
+[1,2,3,4,5,6,7,8,9,10,11,12]
+```
+
+but rather than type this list see if you can use ```range()``` to make this list. Try it out in the console with different numbers in the brackets until you get it right.
+
+In some ```for``` loops we only use the loop variable for counting how many times we run the loop, but in this example we actually need to use the loop variable ```n``` in making the output.
+
+![Output from times table revision](times_table_output.png)
 
 ## Next Steps
 
