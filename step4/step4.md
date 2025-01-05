@@ -287,9 +287,13 @@ But ```range()``` is even more useful still.
 
 ## A times table revision project
 
-----
+## Next Steps
 
-- That's the end of our short introduction to Python. I hope you enjoyed it.
+That's the end of our short introduction to Python. I hope you enjoyed it.
+
+Here are some ideas for other projects you can try.
+
+----
 
 - Back to [previous step](../step3/step3.md).
 
