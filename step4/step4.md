@@ -384,7 +384,7 @@ If your first attempt doesn't quite work then see if you can make some changes t
 table = 7
 
 for n in range(1,13):
-  print(n, 'times', table, 'is'', n * table)
+  print(n, 'times', table, 'is', n * table)
 ```
 
 </details>
