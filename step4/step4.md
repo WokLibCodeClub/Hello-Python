@@ -351,13 +351,43 @@ but rather than type this list see if you can use ```range()``` to make this lis
 
 In some ```for``` loops we only use the loop variable for counting how many times we run the loop, but in this example we actually need to use the loop variable ```n``` in making the output.
 
-We can generate the output using the ```print()``` function with several items inside the brackets, each separated by a comma. This print function will have to be *indented* and come after the ```for``` line, so it will run once for every number in the list. Each time we run the loop the loop variable ```n``` will be set to the next number in the list.
+We can generate the output using the ```print()``` function with several items inside the brackets, each separated by a comma. This print function will have to be *indented*. It is placed after the ```for``` line, and it will run once for every number in the list. Each time we run the loop the loop variable ```n``` will be set to the next number in the list.
 
-Look at the output:
+Here is a picture of just one line of the output for the seven times table. This means we have set the variable ```table = 7```:
 
 ![Output from times table revision](times_table_output.png)
 
-Can you work out what to put inside the brackets of the ```print()``` function to print out the times table?
+The picture shows there are *five* different parts to the output, so the ```print()``` function will contain *five* items in the brackets, each separated by a comma.
+
+Can you work out what each of the five items inside the brackets of the ```print()``` function will be to print out the times table?
+
+Your whole code will look like this, except you have to work out what goes in place of the question marks!
+
+``` python
+#!/bin/python3
+
+table = 7
+
+for n in range(????):
+  print(????, ????, ????, ????, ????)
+```
+
+Yes - that's all the code you need. You will find all the answers you need in different parts of this *Hello Python* course. Look at this step for the ```range()``` function and the explanation of the ```for``` loop, and look at [step 1](../step1/step1.md) for using the ```print()``` function.
+
+If your first attempt doesn't quite work then see if you can make some changes to get it right. You can't harm the computer by doing this, so try anything!
+
+<details><summary>Here is one way to do it, but <i>PLEASE</i>  try to work it out for yourself first. You will learn much more about Python coding by trying it yourself than by looking at this answer!</summary>
+
+``` python
+#!/bin/python3
+
+table = 7
+
+for n in range(1,13):
+  print(n, 'times', table, 'is'', n * table)
+```
+
+</details>
 
 ## Next Steps
 
