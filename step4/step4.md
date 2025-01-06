@@ -308,7 +308,7 @@ it will give you a list which starts at 5 and goes up in jumps of 3, until the l
 
 ## A times table revision project
 
-Is there a times table which you find slightly difficult to remember? Some people find the 7-times table a bit tricky. So we'll write a short programme to print out a times-table so we can use it for revision. Here's the sort of print out we want to get:
+Is there a times table which you find slightly difficult to remember? Some people find the 7-times table a bit tricky. So we'll write a short programme to print out a times table so we can use it for revision. Here's the sort of print out we want to get:
 
 ``` python
 1 times 7 is 7
@@ -353,7 +353,7 @@ In some ```for``` loops we only use the loop variable for counting how many time
 
 We can generate the output using the ```print()``` function with several items inside the brackets, each separated by a comma. This print function will have to be *indented*. It is placed after the ```for``` line, and it will run once for every number in the list. Each time we run the loop the loop variable ```n``` will be set to the next number in the list.
 
-Here is a picture of just one line of the output for the seven times table. This means we have set the variable ```table = 7```:
+Here is a picture of just one line of the output for the seven times table. (We have set the variable ```table = 7```):
 
 ![Output from times table revision](times_table_output.png)
 
