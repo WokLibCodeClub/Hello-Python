@@ -397,6 +397,10 @@ Here are some ideas for other Python projects you can try:
 
 The [RaspberryPi website](https://projects.raspberrypi.org/en/collections/python) has a series of Python projects getting progressively more complex which will show you different Python methods. These projects have been designed to work with the RaspberryPi Python editor, though, and not all of them will work with trinket. If you want, you can make yourself a Raspberry Pi Foundation account by looking [here](https://my.raspberrypi.org/signup) which will enable you to save projects made using the RaspberryPi editor.
 
+On the Wokingham Library Code Club site (this site) there are some slightly more advanced Python projects to try, when you feel more confident. There is a version of Rock-Paper-Scissors which uses turtles to draw the different hand shapes, (see [here](https://github.com/WokLibCodeClub/Rock-Paper-Scissors-with-Turtles)); a version of the paper-and-pencil game [Hangman](https://github.com/WokLibCodeClub/Hangman); and a project to draw a digital and an analogue clock to show the real time (see [Python clock](https://github.com/WokLibCodeClub/Python-Clock)). These all have fully written out instructions. Then there are a whole lot of other projects which we developed while the Code Club was operating online during the coronavirus pandemic. These are all explained in a series of YouTube videos. You can find the links [here](https://github.com/WokLibCodeClub/OnlineCodeclub).
+
+Happy Python coding!
+
 ----
 
 - Back to [previous step](../step3/step3.md).
