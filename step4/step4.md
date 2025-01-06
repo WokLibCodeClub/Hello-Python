@@ -393,7 +393,9 @@ for n in range(1,13):
 
 That's the end of our short introduction to Python. I hope you enjoyed it.
 
-Here are some ideas for other projects you can try.
+Here are some ideas for other Python projects you can try:
+
+The [RaspberryPi website](https://projects.raspberrypi.org/en/collections/python) has a series of Python projects getting progressively more complex which will show you different Python methods. These projects have been designed to work with the RaspberryPi Python editor, though, and not all of them will work with trinket. If you want, you can make yourself a Raspberry Pi Foundation account by looking [here](https://my.raspberrypi.org/signup) which will enable you to save projects made using the RaspberryPi editor.
 
 ----
 
