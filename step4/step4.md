@@ -372,7 +372,7 @@ for n in range(????):
   print(????, ????, ????, ????, ????)
 ```
 
-Yes - that's all the code you need. You will find all the answers you need in different parts of this *Hello Python* course. Look at this step for the ```range()``` function and the explanation of the ```for``` loop, and look at [step 1](../step1/step1.md) for using the ```print()``` function.
+Yes - that's all the code you need. You will find all the answers you need in different parts of this *Hello Python* course. Look at [this step](#the-very-useful-range-function) for the ```range()``` function and [here](#the-python-for-loop) for the explanation of the ```for``` loop, and look at [step 1](../step1/step1.md#print) for using the ```print()``` function.
 
 If your first attempt doesn't quite work then see if you can make some changes to get it right. You can't harm the computer by doing this, so try anything!
 
