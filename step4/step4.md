@@ -359,7 +359,7 @@ Here is a picture of just one line of the output for the seven times table. (We 
 
 The picture shows there are *five* different parts to the output, so the ```print()``` function will contain *five* items in the brackets, each separated by a comma.
 
-Can you work out what each of the five items inside the brackets of the ```print()``` function will be to print out the times table?
+Can you work out what each of the five items inside the brackets of the ```print()``` function will be?
 
 Your whole code will look like this, except you have to work out what goes in place of the question marks!
 
