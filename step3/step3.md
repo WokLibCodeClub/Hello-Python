@@ -161,7 +161,7 @@ You can adjust the number in the brackets: 1 is very slow, 10 is very fast, but,
 
 ## First Python "repeat" loop
 
-Unfortunately the code we've written for our turtle is not very good Python coding - because there's a lot of *repitition* in it, and repetition is something coders always try to avoid.
+Unfortunately the code we've written for our turtle is not very good Python coding - because there's a lot of *repetition* in it, and repetition is something coders always try to avoid.
 
 (If you look at the code you will see we have the two lines
 
