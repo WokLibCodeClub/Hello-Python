@@ -4,7 +4,7 @@ We have found that the *Google Chrome* and *Microsoft Edge* browsers work well w
 
 ## Logging in
 
-Go to the the trinket home page at [trinket.io](https://trinket.io),  click on **Log In**, and enter your username and password. This will take you to your home page:
+Go to the trinket home page at [trinket.io](https://trinket.io),  click on **Log In**, and enter your username and password. This will take you to your home page:
 
 ![Trinket home page](trinket1.png)
 
