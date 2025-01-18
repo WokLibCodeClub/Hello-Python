@@ -14,7 +14,9 @@ You can try this out in your "first ever Python code" project. Type
 input("What's your name?")
 ```
 
-and click on Run. In the results panel you will see it has printed **What's your name?** and after that is a flashing black rectangle. That means the code is waiting for you to type in something into the results panel. But before you start to type ***CLICK YOUR MOUSE ONCE INSIDE THE RESULTS PANEL***. This is to shift the *focus* of trinket to the results panel. If you start typing without doing this, trinket will assume you are still editing your code, so whatever you type will appear in the code and will probably cause an error. You can easily remove anything you typed by accident in the code using the keys Cntl-Z, for *undo*.
+and click on Run. In the results panel you will see it has printed **What's your name?** and after that is a flashing black rectangle. That means the code is waiting for you to type in something into the results panel. But before you start to type ***CLICK YOUR MOUSE ONCE INSIDE THE RESULTS PANEL***. This is to shift the *focus* of trinket to the results panel. If you start typing without doing this, trinket will assume you are still editing your code, so whatever you type will appear in the code and will probably cause an error. You can easily remove anything you typed by accident in the code using the keys Ctrl-Z, for *undo*.
+
+After you've finished typing you have to press the Enter/Return key to proceed.
 
 The phrase inside the brackets in the ```input()``` function is called a *prompt string*.
 
