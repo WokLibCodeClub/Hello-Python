@@ -64,7 +64,7 @@ We have made an example project to show a slightly more complicated multiple tes
 
 ## Lists in Python
 
-Well that's the rather clumsy version of the Sorting House code. But we can make it much simpler using a Python *list*. Move the browser tab with the [Interactive Python Console](https://trinket.io/console).
+Well that's the rather clumsy version of the Sorting House code. But we can make it much simpler using a Python *list*. Move to the browser tab with the [Interactive Python Console](https://trinket.io/console).
 
 We are going to create a list, so type this into the console
 
