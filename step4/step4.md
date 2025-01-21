@@ -64,7 +64,7 @@ We have made an example project to show a slightly more complicated multiple tes
 
 ## Lists in Python
 
-Well that's the rather clumsy version of the Sorting House code. But we can make it much simpler using a Python *list*. Move the the browser tab with the [Interactive Python Console](https://trinket.io/console).
+Well that's the rather clumsy version of the Sorting House code. But we can make it much simpler using a Python *list*. Move the browser tab with the [Interactive Python Console](https://trinket.io/console).
 
 We are going to create a list, so type this into the console
 
@@ -322,7 +322,7 @@ Is there a times table which you find slightly difficult to remember? Some peopl
 9 times 7 is 63
 10 times 7 is 70
 11 times 7 is 77
-12 times 7 is 784
+12 times 7 is 84
 ```
 
 Using a ```for``` loop we can create this output with just a couple of lines of code.
@@ -335,7 +335,7 @@ Start a new project, following the instructions [here](../trinket_basics/using_t
 
 Give it a name to show that it's a times table programme.
 
-We want to use it for *any* times table, not just the 7-times table, so lets have a variable where we set the times table we want to print. We'll set it to 7 to start with but we can change this to get any other times table.
+We want to use it for *any* times table, not just the 7-times table, so let's have a variable where we set the times table we want to print. We'll set it to 7 to start with but we can change this to get any other times table.
 
 ``` python
 table = 7
