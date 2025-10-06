@@ -212,13 +212,13 @@ len(houses)
 
 and it will print the number of items in that list.
 
-Another list function will sort our list. If we type
+Another list function will sort our list into alphabetical order. If we type
 
 ``` python
 houses.sort()
 ```
 
-then display the list again (hit the UP arrow a couple of times to get the command ```houses``` then press Return) you will see the list has now been sorted into alphabetical order.
+then display the list again (hit the UP arrow a couple of times to get the command ```houses``` then press Return) you will see the list has now been sorted.
 
 Sometimes we make an empty list in Python, then add items to it in the code. This code will make an empty list attached to the variable ```newlist```:
 
