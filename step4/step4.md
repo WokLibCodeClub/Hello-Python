@@ -35,7 +35,7 @@ from random import randint
 
 Since there are four houses in Hogwarts School we will generate a random integer between 1 and 4 and use this to select a house. Put the random integer in a variable. You can pick any name for the variable but it would be useful to have a name that indicates this is a random number. (WARNING: *don't* use the name ```randint``` as this is the name of a function, and you should avoid giving variables the same names as functions.) Look back at previous code if you aren't sure how to do this. (You will find a clue in [step 1](../step1/step1.md#python-libraries) in the section on Python libraries.)
 
-Now we will make a rather complicated ```if ... else``` block to select the house. In the code below you need to put the name of your random number variable in place of the four asterisks:
+Now we will make a rather complicated ```if ... else``` block to select the house. In the code below you need to put the name of *your random number variable* in place of the four asterisks:
 
 ``` python
 if **** == 1:
@@ -64,25 +64,23 @@ We have made an example project to show a slightly more complicated multiple tes
 
 ## Lists in Python
 
-Well that's the rather clumsy version of the Sorting House code. But we can make it much simpler using a Python *list*. Move to the browser tab with the [Interactive Python Console](https://trinket.io/console).
-
-We are going to create a list, so type this into the console
+Well that's the rather clumsy version of the Sorting House code. But we can make it much simpler using a Python *list*. Type this into your code after the ```import``` line:
 
 ``` python
 houses = ['Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw']
 ```
 
-The first part of this code is simply making a variable, called ```houses```. To the right of the equals sign we have left and right *square brackets* ```[ ]``` and in between these we have a list of the different houses, each one separated by a comma. The square brackets indicate that we are making a *list*, so the variable ```houses``` will be of type "list".
+The first part of this line is simply making a variable, called ```houses```. To the right of the equals sign we have left and right *square brackets* ```[ ]``` and in between these we have a list of the different houses, each one separated by a comma. The square brackets indicate that we are making a *list*, so the variable ```houses``` will be of type "list".
 
 Because each of the items in the list is surrounded by quote marks we can see that this is a list of *text strings*. But you can also have lists of integer numbers, decimal numbers, turtles, in fact, just about any type of Python object. You can even have lists of lists!
 
-We can print a list using the ```print()``` function:
+We can print a list using the ```print()``` function, so type this after the line which defines the list:
 
 ``` python
 print(houses)
 ```
 
-which will print out all the items including the square brackets.
+When you run the code this will print out all the items in the list including the square brackets.
 
 ### Identifying the items in a list
 
@@ -94,7 +92,7 @@ In our ```houses``` list, the item 'Gryffindor' would have the index number 2, s
 print(houses[2])
 ```
 
-As you see we can refer to any item by using the variable name, followed by the index number in square brackets.
+As you see we can refer to any item by using the list variable name, followed by the index number in square brackets.
 
 Try typing
 
@@ -106,9 +104,73 @@ print(houses[4])
 
 As you can see this produces an error - an "Index" error. This is a very common error, and almost all coders will accidentally create one of these at some time - it simply means you have tried to use a list with an index number which doesn't exist. Why did we cause this error? It's because although our list has four items the index numbers start at 0, so the last item in the list has index number 3, not 4. There is *no* item with an index number 4, so we get an error.
 
+### A much simpler Sorting Hat programme
+
+Using this list we can now make a much simpler Sorting Hat programme because we can use the random number in your random number variable to select an item from the list.
+
+So we no longer need any of the ```if```, ```elif``` and ```else``` statements. The whole code now looks like this (remember, you have to put the name of *your random number variable* in place of the four asterisks):
+
+``` python
+#!/bin/python3
+
+from random import randint
+
+houses = ['Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw']
+
+**** = randint(1,4)
+
+house = houses[****]
+print(house)
+```
+
+In fact we can make the code even shorter and get rid of your random number variable by putting the ```randint()``` function *inside* the square brackets:
+
+``` python
+house = houses[randint(1,4)]
+```
+
+or even shorter still, by getting rid of the ```house``` variable altogether and putting the whole code inside the ```print()``` line, so apart from the ```import``` line the whole programme only consists of two lines:
+
+```python
+
+houses = ['Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw']
+print(houses[randint(1,4)])
+```
+
+But, if you run this code several times you will eventually produce an **IndexError**. Can you spot why this is, and what you need to change to stop it happening? Try and figure this out yourself before you click on the arrow.
+
+<details><summary>How to stop the index error</summary>
+<br>
+The
+<p></p>
+
+```python
+randint(1,4)
+```
+
+<p></p>
+function generates random integers between 1 and 4 to use as the index for the list. But, we know that in a list the index numbers start at 0, so if the list has four entries the last index number will be 3. Eventually your code will generate the random integer 4, which is outside the index range for this list, so it produces an IndexError.
+<p></p>
+The fix is simply to change the range of random numbers in the
+<p></p>
+
+```python
+randint()
+```
+<p></p>
+function so it generates numbers from 0 to 3.
+
+</details>
+
+Using a list has made the code much shorter.
+
 ### Things you can do with lists
 
 Now we've made a list we have opened the possibility of using a whole lot of special *list* functions in Python.
+
+The easiest way to experiment with lists is to use the Python console, so open a new tab on your browser and go to [Interactive Python Console](https://trinket.io/console). 
+
+To save you doing a lot of typing *copy* the ```houses``` list from your *Sorting Hat* code and paste it into the console.
 
 We can add an item to the list. Let's say Hogwarts is getting full and needs another house. We can add a house called 'Wokies' to the list like this:
 
@@ -140,7 +202,7 @@ Sometimes we want to find out which item in the list has a given index number - 
 houses.index('Gryffindor')
 ```
 
-If you want to check this, type ```houses``` in the console, or hit the UP arrow a couple of times, then hit Return to show the whole list.
+If you want to check this is showing the right number, type ```houses``` in the console, or hit the UP arrow a couple of times, then hit Return to show the whole list.
 
 Another list function will sort our list. If we type
 
@@ -162,38 +224,7 @@ If we need Python to count how many items there are in the list we can use a fun
 len(houses)
 ```
 
-and it will probably print 4, if that's the number of items in that list.
-
-### A much simpler Sorting Hat programme
-
-To make the really simple Sorting Hat programme we first need to import another function from the ```random``` library, so we will make a change to the ```import``` line at the beginning of the code. If you want to import more than one named function from a library you don't need a separate line for each function, you can just make a list of the functions you want, with a comma between each. So change this line to read:
-
-``` python
-from random import randint, choice
-```
-
-so we can use the ```choice``` function. This function acts with a list and simply selects an item at random from the list.
-
-So we no longer need a random number for our code; and we no longer need any of the ```if``` block. The whole code looks like this:
-
-``` python
-#!/bin/python3
-
-from random import randint, choice
-
-houses = ['Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw']
-
-house = choice(houses)
-print(house)
-```
-
-In fact we can make the code even shorter by combining the last two lines, by putting the ```choice()``` function *inside* the print function:
-
-``` python
-print(choice(houses))
-```
-
-Using a list has made the code much shorter.
+and it will probably print the number of items in that list.
 
 ## The Python ```for``` loop
 
