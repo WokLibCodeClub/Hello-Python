@@ -204,6 +204,14 @@ houses.index('Gryffindor')
 
 If you want to check this is showing the right number, type ```houses``` in the console, or hit the UP arrow a couple of times, then hit Return to show the whole list.
 
+Often we need Python to count how many items there are in a list and we can use the function ```len()```, short for length. Try this with the ```houses``` list:
+
+``` python
+len(houses)
+```
+
+and it will print the number of items in that list.
+
 Another list function will sort our list. If we type
 
 ``` python
@@ -217,14 +225,6 @@ Sometimes we make an empty list in Python, then add items to it in the code. Thi
 ``` python
 newlist = []
 ```
-
-If we need Python to count how many items there are in the list we can use a function ```len()```, short for length. Try this with the ```houses``` list:
-
-``` python
-len(houses)
-```
-
-and it will probably print the number of items in that list.
 
 ## The Python ```for``` loop
 
