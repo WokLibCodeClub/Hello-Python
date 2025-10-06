@@ -192,7 +192,7 @@ Type ```houses``` again and you will now see that 'Slytherin' is no longer in th
 
 ### Using the arrow keys in the console
 
-The UP and DOWN arrows are really useful when you are using the console, as they allow you to reuse previous commands without having to retype them. If you hit the UP arrow once it will get back the last command you used; if you hit UP again it will find the command you used before that, and so on. Once you've found the command you want you press Return to execute it.
+The UP and DOWN arrows are really useful when you are using the console, as they allow you to reuse previous commands without having to retype them. If you hit the UP arrow once it will get back the last command you used; if you hit UP again it will find the command you used before that, and so on. Once you've found the command you want you press Enter to execute it.
 
 ----
 
@@ -202,7 +202,7 @@ Sometimes we want to find out which item in the list has a given index number - 
 houses.index('Gryffindor')
 ```
 
-If you want to check this is showing the right number, type ```houses``` in the console, or hit the UP arrow a couple of times, then hit Return to show the whole list.
+If you want to check this is showing the right number, type ```houses``` in the console, or hit the UP arrow a couple of times, then hit Enter to show the whole list.
 
 Often we need Python to count how many items there are in a list and we can use the function ```len()```, short for length. Try this with the ```houses``` list:
 
@@ -218,7 +218,7 @@ Another list function will sort our list into alphabetical order. If we type
 houses.sort()
 ```
 
-then display the list again (hit the UP arrow a couple of times to get the command ```houses``` then press Return) you will see the list has now been sorted.
+then display the list again (hit the UP arrow a couple of times to get the command ```houses``` then press Enter) you will see the list has now been sorted.
 
 Sometimes we make an empty list in Python, then add items to it in the code. This code will make an empty list attached to the variable ```newlist```:
 
@@ -271,7 +271,7 @@ For a 'repeat 10 times' loop this is not too much typing, but what if you wanted
 
 Luckily Python gives us a function called ```range()``` which automatically generates lists of integer numbers. We can explore the very useful ```range()``` function in the [Interactive Python Console](https://trinket.io/console).
 
-In the console type ```range(6)``` and press Return. Now try it again with a different number inside the brackets. After two or three goes you will get to understand that the range function generates a list of whole numbers, and you will be able to predict what numbers your list will contain.
+In the console type ```range(6)``` and press Enter. Now try it again with a different number inside the brackets. After two or three goes you will get to understand that the range function generates a list of whole numbers, and you will be able to predict what numbers your list will contain.
 
 <details><summary>Hint</summary>
 
