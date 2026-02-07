@@ -58,6 +58,19 @@ If we combine all these ```if``` blocks into one multiple block using ```elif```
 
 Change the second and third ```if``` to ```elif``` and try the code again. You should now find the turtle always shows the correct colour as you vary the value of ```reading```.
 
+``` python
+if reading > 90:
+    t.color('red')
+
+elif reading > 70:
+    t.color('orange')
+
+elif reading > 50:
+    t.color('yellow')
+else:
+    t.color('lime green')
+```
+
 So, if the reading is, say, 99, the first test gives ```True```, so the colour is set to red, and Python immediately skips all the other tests, leaving the red colour showing.
 
 If the reading is 75 the first test gives ```False```, so Python goes on to the second test - this one gives ```True``` so the colour is set to orange, and Python skips the remaining tests, so the colour stays orange.
