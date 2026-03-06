@@ -35,7 +35,7 @@ from random import randint
 
 Since there are four houses in Hogwarts School we will generate a random integer between 1 and 4 and use this to select a house. Put the random integer in a variable. You can pick any name for the variable but it would be useful to have a name that indicates this is a random number. (WARNING: *don't* use the name ```randint``` as this is the name of a function, and you should avoid giving variables the same names as functions.) Look back at previous code if you aren't sure how to do this. (You will find a clue in [step 1](../step1/step1.md#python-libraries) in the section on Python libraries.)
 
-Now we will make a rather complicated ```if ... else``` block to select the house. In the code below you need to put the name of *your random number variable* in place of the four asterisks:
+Now we will make a rather complicated ```if ... else``` block to select the house. In the code below **you need to put the name of your random number variable in place of the four asterisks**:
 
 ``` python
 if **** == 1:
@@ -47,10 +47,10 @@ elif **** == 3:
 else:
   house = 'Ravenclaw'
 
-print(house)
+print('You are in', house)
 ```
 
-If you Run the code several times, it will print one of the four Hogwarts houses at random.
+If you Run the code several times, it will assign you to one of the four Hogwarts houses at random.
 
 The words ```if``` and ```else``` we have already used in the *Age Calculator* code, but we haven't come across ```elif``` before.
 
@@ -64,7 +64,7 @@ We have made an example project to show a slightly more complicated multiple tes
 
 ## Lists in Python
 
-Well that's the rather clumsy version of the Sorting House code. But we can make it much simpler using a Python *list*. Type this into your code after the ```import``` line:
+Well that's the rather clumsy version of the Sorting House code. But we can make it much simpler using a Python *list*. A Python list is a way of combining several variables or objects into one, in a very ordered sort of way. Type this into your code after the ```import``` line:
 
 ``` python
 houses = ['Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw']
