@@ -124,7 +124,7 @@ houses = ['Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw']
 **** = randint(1,4)
 
 house = houses[****]
-print(house)
+print('You are in', house)
 ```
 
 In fact we can make the code even shorter and get rid of your random number variable by putting the ```randint()``` function *inside* the square brackets:
@@ -138,7 +138,7 @@ or even shorter still, by getting rid of the ```house``` variable altogether and
 ```python
 
 houses = ['Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw']
-print(houses[randint(1,4)])
+print('You are in', houses[randint(1,4)])
 ```
 
 But, if you run this code several times you will eventually produce an **IndexError**. Can you spot why this is, and what you need to change to stop it happening? Try and figure this out yourself before you click on the arrow.
