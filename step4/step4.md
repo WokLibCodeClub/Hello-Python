@@ -33,7 +33,11 @@ from random import randint
   
 </details>
 
-Since there are four houses in Hogwarts School we will generate a random integer between 1 and 4 and use this to select a house. Put the random integer in a variable. You can pick any name for the variable but it would be useful to have a name that indicates this is a random number. (WARNING: *don't* use the name ```randint``` as this is the name of a function, and you should avoid giving variables the same names as functions.) Look back at previous code if you aren't sure how to do this. (You will find a clue in [step 1](../step1/step1.md#python-libraries) in the section on Python libraries.)
+Since there are four houses in Hogwarts School we will generate a random integer between 1 and 4 and use this to select a house. 
+
+For the next line of code, make a variable and set it equal to a random integer between 1 and 4.
+
+(You can use any name for the variable but it would be useful to have a name that indicates this is a random number. WARNING: *don't* use the name ```randint``` for your variable as this is the name of a function, and you should never give variables the same names as functions. You will find an example of using the ```randint()``` function in [step 1](../step1/step1.md#python-libraries) in the section on Python libraries.)
 
 Now we will make a rather complicated ```if ... else``` block to select the house. In the code below **you need to put the name of your random number variable in place of the four asterisks**:
 
