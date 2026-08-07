@@ -78,7 +78,7 @@ You can do some things with integers that you can't do with decimal numbers, and
 
 Open a new tab in your browser and go to this link:
 
-[trinket.io/console](https://trinket.io/console)
+[pythonmorsels.com/repl/](https://www.pythonmorsels.com/repl/)
 
 This opens the Interactive Python Console, where the left end of each line begins with three *greater than* signs: ```>>>```.
 
