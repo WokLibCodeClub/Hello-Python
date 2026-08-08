@@ -44,9 +44,13 @@ Trinket projects are all public, and anyone can open and look at them. If you wa
 
 ![Remixing a trinket](new_trinket4.png)
 
-You will notice a green button labelled *Remix* in the top left. Click on this, and it will change to say *remixed*. Although the project is now remixed into your account you can't save your changes in this window. Instead, open *My Trinkets* (see [above](#looking-at-all-your-trinket-projects) for how to do this) then look for the project in your trinkets. It will probably be at the top left of the list. Click on this and it will open the full editor window:
+You will notice a green button labelled *Remix* in the top left. Click on this, and it will change to say *remixed*. Although the project is now remixed into your account you can't save your changes in this window. Instead, open *My Trinkets* (see [above](#looking-at-all-your-trinket-projects) for how to do this) then look for the project in your trinkets. It will probably be at the top left of the list. 
 
-![Editing remixed trinket](trinket5.png)
+![Finding remixed trinket](new_trinket5.png)
+
+Click on this and it will open the full editor window:
+
+![Editing remixed trinket](new_trinket6.png)
 
 You can now ***rename*** the project by clicking on the project name. You also have a *Save* button. Make sure you save your projects often so that you don't lose any of your code.
 
