@@ -2,7 +2,7 @@
 
 This is a short course to introduce Python coding to those who have never used it before. It starts with the very basic commands and works upwards.
 
-These pages were written using the online editor *trinket.io*, which, unfortunately, is no longer available. To make follow along with this course you should use the replacement trinket platform hosted by Strive Math. You can make an account at this site by going to [trinket.strivemath.org/signup](https://trinket.strivemath.org/signup). You will need an e-mail address to create an account.
+These pages were written using the online editor *trinket.io*, which, unfortunately, is no longer available. To follow along with this course you should use the replacement trinket platform hosted by Strive Math. You can make an account at this site by going to [trinket.strivemath.org/signup](https://trinket.strivemath.org/signup). You will need an e-mail address to create an account.
 
 ## Using the trinket editor
 
