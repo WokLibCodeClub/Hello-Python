@@ -6,7 +6,7 @@ We have found that the *Google Chrome* and *Microsoft Edge* browsers work well w
 
 Go to the trinket home page at [trinket.strivemath.org](https://trinket.strivemath.org),  click on **Log In**, and enter your username and password. This will take you to your home page:
 
-![Trinket home page](trinket1.png)
+![Trinket home page](new_trinket1.png)
 
 With every new account there are some trinket projects already in your account - these are the square pictures you can see.
 
