@@ -8,15 +8,15 @@ Go to the trinket home page at [trinket.strivemath.org](https://trinket.strivema
 
 ![Trinket home page](new_trinket1.png)
 
-With every new account there are some trinket projects already in your account - these are the square pictures you can see.
+When you create a new account there won't be any projects in your account. As you create some they will appear.
 
 ## Looking at *all* your trinket projects
 
 Click on the little downward-pointing arrow next to your username, and select *My Trinkets*:
 
-![My Trinkets page](trinket2.png)
+![My Trinkets page](new_trinket2.png)
 
-This page shows all the projects that are in your account. To open one, just click on it.
+This page will now show all the projects that are in your account. To open one, just click on it.
 
 ## Starting a new trinket project
 
