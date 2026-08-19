@@ -273,7 +273,7 @@ For a 'repeat 10 times' loop this is not too much typing, but what if you wanted
 
 ## The very useful ```range()``` function
 
-Luckily Python gives us a function called ```range()``` which automatically generates lists of integer numbers. We can explore the very useful ```range()``` function in the [Interactive Python Console](https://www.pythonmorsels.com/repl/).
+Luckily Python gives us a function called ```range()``` which automatically generates lists of integer numbers. We can explore the very useful ```range()``` function in the [Interactive Python Console](https://trinket.io/console).
 
 In the console type ```range(6)``` and press Enter. Now try it again with a different number inside the brackets. After two or three goes you will get to understand that the range function generates a list of whole numbers, and you will be able to predict what numbers your list will contain.
 
