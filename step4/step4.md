@@ -8,7 +8,7 @@ Start a new project, following the instructions [here](../trinket_basics/using_t
 
 This project will be for a Hogwarts School Sorting Hat, so you can give it a name to show that.
 
-You will also find it useful to have the [Interactive Python Console](https://trinket.io/console) open in another tab of your browser.
+You will also find it useful to have the [Interactive Python Console](https://trinket.strivemath.org/console) open in another tab of your browser.
 
 ## Sorting Hat
 
@@ -273,7 +273,7 @@ For a 'repeat 10 times' loop this is not too much typing, but what if you wanted
 
 ## The very useful ```range()``` function
 
-Luckily Python gives us a function called ```range()``` which automatically generates lists of integer numbers. We can explore the very useful ```range()``` function in the [Interactive Python Console](https://trinket.io/console).
+Luckily Python gives us a function called ```range()``` which automatically generates lists of integer numbers. We can explore the very useful ```range()``` function in the [Interactive Python Console](https://trinket.strivemath.org/console).
 
 Actually, ```range()``` doesn't really generate a *list*: it generates a type of Python object which acts exactly like a list. This means, if we want to see the list that ```range()``` generates, we need to convert the ```range``` object to a list first. This needs another Python *type-conversion* function (we have already come across the ```str()``` function to convert a number to a string, and the ```int()``` function to convert a string to an integer). The function to convert an object to a list is very simple: it's ```list()```, with the object to be converted inside the brackets.
 
