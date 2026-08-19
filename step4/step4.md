@@ -172,7 +172,7 @@ Using a list has made the code much shorter.
 
 Now we've made a list we have opened the possibility of using a whole lot of special *list* functions in Python.
 
-The easiest way to experiment with lists is to use the Python console, so open a new tab on your browser and go to [Interactive Python Console](https://trinket.io/console). 
+The easiest way to experiment with lists is to use the Python console, so open a new tab on your browser and go to [Interactive Python Console](https://www.pythonmorsels.com/repl/). 
 
 To save you doing a lot of typing *copy* the ```houses``` list from your *Sorting Hat* code and paste it into the console.
 
@@ -275,13 +275,17 @@ For a 'repeat 10 times' loop this is not too much typing, but what if you wanted
 
 Luckily Python gives us a function called ```range()``` which automatically generates lists of integer numbers. We can explore the very useful ```range()``` function in the [Interactive Python Console](https://trinket.io/console).
 
-In the console type ```range(6)``` and press Enter. Now try it again with a different number inside the brackets. After two or three goes you will get to understand that the range function generates a list of whole numbers, and you will be able to predict what numbers your list will contain.
+Actually, ```range()``` doesn't really generate a *list*: it generates a type of Python object which acts exactly like a list. This means, if we want to see the list that ```range()``` generates, we need to convert the ```range``` object to a list first. This needs another Python *type-conversion* function (we have already come across the ```str()``` function to convert a number to a string, and the ```int()``` function to convert a string to an integer). The function to convert an object to a list is very simple: it's ```list()```, with the object to be converted inside the brackets.
+
+So, to look at the list which is produced by a ```range()``` function we need to place ```range()``` inside the brackets in a ```list()``` function.
+
+In the console type ```list(range(6))``` and press Enter. Now try it again with a different number inside the brackets. After two or three goes you will get to understand that the range function generates a list-like object of whole numbers, and you will be able to predict what numbers your list will contain.
 
 <details><summary>Hint</summary>
 
 <p></p>
 
-```range()``` with one number in the brackets produces a list of numbers starting with 0 and increasing by 1 until <i>one less than</i> the number in the brackets.
+```list(range())``` with one number in the brackets produces a list of numbers starting with 0 and increasing by 1 until <i>one less than</i> the number in the brackets.
 
 </details>
 
@@ -291,13 +295,13 @@ You can see that whatever number you put in the brackets that is the number of i
 for n in range(10):
 ```
 
-The function ```range(10)``` generates a list with 10 numbers in it, so the loop will repeat 10 times.
+The function ```range(10)``` generates a list-like object with 10 numbers in it, so the loop will repeat 10 times.
 
 ### ```range()``` with two numbers in the brackets
 
 But ```range()``` can do more than that.
 
-In the Interactive Python Console type ```range()``` but this time put two numbers inside the brackets. If this produces an empty list ```[]``` try swapping the order of the two numbers. See if you can work out what the two numbers do.
+In the Interactive Python Console type ```list(range())``` but this time put two numbers inside the brackets. If this produces an empty list ```[]``` try swapping the order of the two numbers. See if you can work out what the two numbers do.
 
 <details><summary>Hint</summary>
 <br>
@@ -307,7 +311,7 @@ If you type this:
 <p></p>
 
 ``` python
-range(5,10)
+list(range(5,10))
 ```
 
 it will give you a list which starts at 5 and goes up to 9.
@@ -321,7 +325,7 @@ But ```range()``` is even more useful still.
 Try typing this into the console:
 
 ```
-range(1,20)
+list(range(1,20))
 ```
 
 Now add a comma after the number 20 and add a third number (this should be a small number). Press Enter and see what list the function produces. Change the third number, and see if you can work out what it does!
@@ -334,7 +338,7 @@ If you type this:
 <p></p>
 
 ``` python
-range(5,20,3)
+list(range(5,20,3))
 ```
 
 it will give you a list which starts at 5 and goes up in jumps of 3, until the last number which is less than 20. In this case that is 17.
