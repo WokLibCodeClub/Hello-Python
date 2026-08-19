@@ -172,7 +172,7 @@ Using a list has made the code much shorter.
 
 Now we've made a list we have opened the possibility of using a whole lot of special *list* functions in Python.
 
-The easiest way to experiment with lists is to use the Python console, so open a new tab on your browser and go to [Interactive Python Console](https://www.pythonmorsels.com/repl/). 
+The easiest way to experiment with lists is to use the Python console, so open a new tab on your browser and go to [Interactive Python Console](https://trinket.strivemath.org/console).
 
 To save you doing a lot of typing *copy* the ```houses``` list from your *Sorting Hat* code and paste it into the console.
 
