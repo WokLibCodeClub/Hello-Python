@@ -159,7 +159,7 @@ The Python code for ```if ... else``` follows a similar pattern and also uses st
 
 ### Python ```True``` or ```False```
 
-Go to a tab in your browser where you have the [Interactive Python Console](https://trinket.io/console) open.
+Go to a tab in your browser where you have the [Interactive Python Console](https://trinket.strivemath.org/console) open.
 
 Here is a simple bit of Python code which is clearly True. Type this into the console:
 
