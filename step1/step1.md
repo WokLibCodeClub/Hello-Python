@@ -271,7 +271,9 @@ You can use any letter of the alphabet, capital or small, in your variable names
 There are some words you should avoid for variable names, as these are Python *key words* used in other Python commands - these are
 
 ```python
-and, as, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while, with, yield
+and, as, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, 
+
+global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while, with, yield
 ```
 
 Be careful!! Python is very fussy about capital letters and small letters. If you made a variable called ```letter``` and another one called ```Letter``` Python would treat these as *completely separate* variables.
