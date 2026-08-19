@@ -8,7 +8,7 @@ Start a new project, following the instructions [here](../trinket_basics/using_t
 
 This project will be for a Hogwarts School Sorting Hat, so you can give it a name to show that.
 
-You will also find it useful to have the [Interactive Python Console](https://www.pythonmorsels.com/repl/) open in another tab of your browser.
+You will also find it useful to have the [Interactive Python Console](https://trinket.io/console) open in another tab of your browser.
 
 ## Sorting Hat
 
